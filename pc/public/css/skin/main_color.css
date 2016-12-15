@@ -55,7 +55,7 @@
     border-color: #8FC31F
 }
 .bd-light-info {
-    border-color: #dee7fc
+    border-color: #478b66
 }
 .bd-info {
     border-color: #0b6b3b
@@ -129,7 +129,7 @@
     background-color: #8FC31F
 }
 .bg-light-info {
-    background-color: #dee7fc
+    background-color: #478b66
 }
 .bg-info {
     background-color: #0b6b3b
@@ -205,7 +205,7 @@
     color: #8FC31F
 }
 .t-light-info {
-    color: #dee7fc
+    color: #478b66
 }
 .t-info {
     color: #0b6b3b
@@ -290,7 +290,7 @@
     color:#fff;
 }
 .btn-light-info {
-    background-color: #dee7fc;
+    background-color: #478b66;
     border-color:#186B40;
     color:#5bc0de;
 }
@@ -351,7 +351,7 @@
     color: #95c53e
 }
 .hr-light-info:hover {
-    color: #dee7fc
+    color: #478b66
 }
 .hr-info:hover {
     color: #5bc0de

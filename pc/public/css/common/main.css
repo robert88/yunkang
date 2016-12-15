@@ -866,3 +866,16 @@ h2,.H2 {
 	-o-user-select: 15px;
 
 }
+.btn-white, .btn-light, .btn-light-gray, .btn-muted, .btn-dark, .btn-light-danger, .btn-danger, .btn-light-warn, .btn-warn, .btn-order, .btn-light-sea-green, .btn-success, .btn-light-info, .btn-dodger-blue, .btn-link, .btn {
+
+	border-radius:0px;
+	-moz-border-radius: 0px;
+	-webkit-bordder-radius: 0px;
+	-o-user-select: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 20px 10px;
+}
