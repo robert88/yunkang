@@ -1,0 +1,15 @@
+.teamList{
+	background: #fff;
+	margin:0.625rem;
+	padding: 0.315rem;
+}
+.teamList .name{
+	line-height: 3.3rem;
+	color:#000;
+}
+.teamList .text{
+	line-height: 1.5rem;
+	/*!*white-space: nowrap;*!*/
+	/*!*text-overflow: ellipsis;*!*/
+	/*!*overflow: hidden;*!*/
+/*}*/

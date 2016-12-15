@@ -1,0 +1,36 @@
+.header{
+	text-align: center;
+}
+.loginlogo{
+	margin-top: 2rem;
+	height: 14rem;
+}
+.cricle{
+	width: 4rem;
+	height: 4rem;
+	margin:1rem auto;
+	line-height: 4rem;
+}
+.cricle>i{
+	font-size: 2rem;
+}
+.cricle1{
+	background: #5cb2ff;
+}
+.cricle2{
+	background: #fe9900;
+}
+.cricle3{
+	background: #95c53e;
+}
+.cricle4{
+	background: #db512c;
+}
+.text{
+	font-weight: 500;
+}
+footer{
+	line-height: 3rem;
+	height: 3rem;
+	margin-top:2rem;
+}

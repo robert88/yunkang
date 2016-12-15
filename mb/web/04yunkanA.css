@@ -1,0 +1,9 @@
+.list>li{
+	height:5rem;
+	line-height:5rem;
+}
+.listTextAlgin{
+	display: inline-block; width: 80px;
+	white-space: nowrap;
+	text-align: left;
+}

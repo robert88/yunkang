@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+</head>
+<link rel="stylesheet" type="text/css" href="./public/css/common/base.css">
+<link rel="stylesheet" type="text/css" href="./public/css/common/main.css">
+<link rel="stylesheet" type="text/css" href="./public/css/skin/main_color.css">
+<!--start mergeJs:zepto.min-->
+<script src="/public/js/lib/jquery-1.12.3.js"></script>
+<script>
+    ;(function () {
+        //等比
+        function getResize(max,min,cur,maxCur,minCur){
+            return (cur-min)*(maxCur-minCur)/(max-min)+minCur;
+        }
+        //获取范围
+        function getRagen(val, max, min) {
+            return (val <= min) ? min : ((val <= max) ? val : max);
+        }
+        var preh;
+        function changeRootrem() {
+            var h = getRagen($(window).height(),800,350);
+            console.log(h,preh)
+            if(preh==h){
+                return;
+            }
+            preh = h;
+            /*12/16=0.75,20/16=1.25*/
+            var remroot = getResize(800,350,h,125,75)
+            $("html").css("font-size",remroot+"%")
+        }
+        $(window).on("resize",function () {
+            changeRootrem();
+        })
+        changeRootrem();
+    })()
+
+</script>
+<style>
+    .test>*{
+        border: 1px solid red;
+    }
+</style>
+<body>
+<div class="test" style="position: fixed;right:0px;top:0px;">
+    <h1>h1: 20</h1>
+    <h2>h2:14</h2>
+    <!--<h3>h3:HEALTH</h3>-->
+    <!--<h4>h4:GENOMICS</h4>-->
+    <h3>h3:门户网站</h3>
+    <h4>h4:私人定制</h4>
+    <p>body:私人定制</p>
+    <p>../jpg/01首页-1</p>
+</div>
+<div class='wrap'><img src='./jpg/01首页-1.jpg'</div>
+<p>../jpg/01首页-2登录后</p>
+<div class='wrap'><img src='./jpg/01首页-2登录后.jpg'</div>
+<p>../jpg/01首页</p>
+<div class='wrap'><img src='./jpg/01首页.jpg'</div>
+<p>../jpg/02产品中心-1</p>
+<div class='wrap'><img src='./jpg/02产品中心-1.jpg'</div>
+<p>../jpg/03登录-1</p>
+<div class='wrap'><img src='./jpg/03登录-1.jpg'</div>
+<p>../jpg/03登录-2</p>
+<div class='wrap'><img src='./jpg/03登录-2.jpg'</div>
+<p>../jpg/04走进健云康-1</p>
+<div class='wrap'><img src='./jpg/04走进健云康-1.jpg'</div>
+<p>../jpg/04走进健云康-2宣传文章通用（不加日期）</p>
+<div class='wrap'><img src='./jpg/04走进健云康-2宣传文章通用（不加日期）.jpg'</div>
+<p>../jpg/04走进健云康-3列表通用</p>
+<div class='wrap'><img src='./jpg/04走进健云康-3列表通用.jpg'</div>
+<p>../jpg/05媒体合作-1</p>
+<div class='wrap'><img src='./jpg/05媒体合作-1.jpg'</div>
+<p>../jpg/05媒体合作-2文章通用</p>
+<div class='wrap'><img src='./jpg/05媒体合作-2文章通用.jpg'</div>
+<p>../jpg/05媒体合作-3分享</p>
+<div class='wrap'><img src='./jpg/05媒体合作-3分享.jpg'</div>
+<p>../jpg/06基因科普-1</p>
+<div class='wrap'><img src='./jpg/06基因科普-1.jpg'</div>
+<p>../jpg/07联系我们-1</p>
+<div class='wrap'><img src='./jpg/07联系我们-1.jpg'</div>
+<p>../jpg/07联系我们-2地图</p>
+<div class='wrap'><img src='./jpg/07联系我们-2地图.jpg'</div>
+<p>../jpg/07联系我们-3留言</p>
+<div class='wrap'><img src='./jpg/07联系我们-3留言.jpg'</div>
+<p>../jpg/08商务合作-1</p>
+<div class='wrap'><img src='./jpg/08商务合作-1.jpg'</div>
+<p>../jpg/08商务合作-2入驻商户展示</p>
+<div class='wrap'><img src='./jpg/08商务合作-2入驻商户展示.jpg'</div>
+<p>../jpg/08商务合作-3加入健云康</p>
+<div class='wrap'><img src='./jpg/08商务合作-3加入健云康.jpg'</div>
+<p>../jpg/09个人中心-1会员中心</p>
+<div class='wrap'><img src='./jpg/09个人中心-1会员中心.jpg'</div>
+<p>../jpg/09个人中心-2我的留言</p>
+<div class='wrap'><img src='./jpg/09个人中心-2我的留言.jpg'</div>
+<p>../jpg/09个人中心-3企业中心</p>
+<div class='wrap'><img src='./jpg/09个人中心-3企业中心.jpg'</div>
+<p>../jpg/09个人中心-4报告下载</p>
+<div class='wrap'><img src='./jpg/09个人中心-4报告下载.jpg'</div>
+<p>../jpg/10门户网站-1顶部展开</p>
+<div class='wrap'><img src='./jpg/10门户网站-1顶部展开.jpg'</div>
+</body>
+</html>

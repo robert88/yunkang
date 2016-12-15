@@ -1,0 +1,103 @@
+@import url(/public/css/module/bannar.css);
+.search{
+	line-height: 140px;
+	height: 140px;
+}
+.search .ipt,.search label{
+
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+}
+.search .ipt,.search label{
+	width: 460px;
+	padding-left: 20px;
+}
+.search label{
+	color: #fff;
+	padding: 2px 0;
+	border: 1px solid #95c53e;
+	width: 120px
+}
+
+.notices{
+	height: 240px;
+}
+.subtitle{
+	font-size: 20px;
+	line-height: 20px;
+	padding: 10px 3px;
+	display: inline-block;
+	width: 100%;
+}
+.notices .subtitlewrap{
+	padding-left:300px;
+}
+
+.news{
+	height:500px
+}
+.news .img{
+	position:relative;
+}
+.news .mask,.news .maskimg{
+	position:absolute;
+	left:0px;
+	top:0px;
+
+	width:100%;
+	height:100%;
+}
+.news .mask{
+	background: #000;
+}
+.news .maskimg{
+	background:url(/public/images/circlemore.png) center center no-repeat;
+}
+.news .img{
+	width:280px;
+	height:180px;
+}
+.news .img:hover .mask{
+	display: block;
+}
+.news .textwrap{
+	width:280px;
+}
+.news .textwrap.right{
+	float: right;
+}
+.loadmore{
+	padding:5px 30px;
+	width:150px;
+	height:50px;
+	line-height: 50px;
+	color:#fff;
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-75px;
+}
+.productcore{
+	height: 560px;
+}
+.productcore .left{
+	padding-top:125px
+}
+.productcore .title{
+	font-size: 28px;
+	line-height: 28px;
+	color:#999;
+	font-weight: 700;
+}
+.titleEn{
+	color: #b1b1b1;
+	font-size: 32px;
+	line-height: 50px;
+}
+.right>img{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -70px;
+}

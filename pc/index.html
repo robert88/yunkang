@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/main.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/skin/main_color.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+    <script src="/public/js/common/prototype.js"></script>
+    <script src="/public/js/common/base.js"></script>
+    <script src="/public/js/lib/swiper.js"></script>
+    <script src="/public/js/common/config.js"></script>
+    <script src="/public/js/common/main.js"></script>
+    <!--end mergeJs-->
+
+
+</head>
+
+<body>
+
+    <!--s:头部-->
+    <div class="bg-white bd-bottom">
+        <div class="wrap">
+
+            <header class="pageHeader">
+                <div class="headerLeft tc" >
+                    <div class="logo" >
+                        <img src="/public/images/logo.png" />
+                    </div>
+                    <div class="tel" >
+                        <i class="icon-tel"></i>
+                        <span>400-678-4859</span>
+                    </div>
+                </div>
+                <div class="headerCenter">
+                    <ul class="col tc topNav">
+                        <li class="per1-7 active">
+                                <span class="text" >
+                                    <i class="circleline" ></i>
+                                    首页
+                                </span>
+                        </li>
+                        <li class="per1-7">
+                            走进健云康
+                        </li>
+                        <li class="per1-7">
+                            媒体中心
+                        </li>
+                        <li class="per1-7">
+                            产品中心
+                        </li>
+                        <li class="per1-7">
+                            商务合作
+                        </li>
+                        <li class="per1-7">
+                            基因科普
+                        </li>
+                        <li class="per1-7">
+                            联系我们
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerRight">
+                    <span class="btn-radius btn-muted signin">登陆</span>
+                    <span class="account">
+                         <span class="btn-radius mr10">会员中心</span><span>退出</span>
+                    </span>
+
+                </div>
+            </header>
+
+        </div>
+    </div>
+    <!--e:头部-->
+
+
+<div id="pageCss"></div>
+<div id="page"></div>
+<div id="pageJs"></div>
+
+<div id="pageLoad">
+    <div class="loader">
+        <div class="loader-inner line-scale-pulse-out">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--s底部-->
+    <footer style="height: 480px">
+        <div class="tel" style="background: url(/public/images/tel.jpg)">400-678-4859</div>
+        <div class="col">
+            <div class="fl" style="width: 360px">
+                <img src="/public/images/bottomlogo.jpg" alt="">
+                <img src="/public/images/erweima.jpg" alt="">
+            </div>
+            <ul class="fl col">
+                <li class="col3">
+                    <dl>
+                        <dt>走进健云康</dt>
+
+                        <dd>品牌故事</dd>
+                        <dd>荣誉资质</dd>
+                        <dd>专家团队</dd>
+                        <dd>协议声明</dd>
+                        <dd>大事记</dd>
+                    </dl>
+                </li>
+                <li class="col3">
+                    <dl>
+                        <dt>产品中心</dt>
+                        <dd>产品套餐</dd>
+                        <dd>私人订制</dd>
+                        <dd>商务合作批量定制</dd>
+                        <dd>品牌活动</dd>
+                    </dl>
+                </li>
+                <li class="col3">
+                    <dl>
+                        <dt>商务合作</dt>
+                        <dd>品牌优势</dd>
+                        <dd>已入驻商户</dd>
+                        <dd>加入健云康</dd>
+                    </dl>
+                </li>
+                <li class="col3">
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd>联系我们</dd>
+                        <dd>电子地图</dd>
+                        <dd>留言反馈</dd>
+                    </dl>
+                </li>
+            </ul>
+            <p>Copyright©2016 北京健云康生物信息科技有限公司版权所有  京ICP备10000000号-1</p>
+        </div>
+    </footer>
+<!--e底部-->
+</body>
+
+
+<script type="text/javascript">
+    ;(function() {
+        window.PAGE = {};
+        window.PAGE.HOME = "#/web/01home.html";
+        window.PAGE.ERROR404 = "#/html/web404";
+        window.PAGE.destroy = [];
+        window.PAGE.loading = null;
+        window.PAGE.closeLoading = null;
+        window.PAGE.load = null;//相对于widow.onload
+        window.PAGE.STATICDEBUG = true;//JSdebug
+        window.PAGE.DEBUG = true;//ajax debug
+        window.PAGE.language = {en:{}};
+        window.PAGE.languagePath = "/lang_";
+        window.PAGE.curLanguage = "en";
+        window.PAGE.reload = null;
+        window.PAGE.data = {};
+    })()
+</script>
+<script src="/public/js/common/page.js"></script>
+</html>

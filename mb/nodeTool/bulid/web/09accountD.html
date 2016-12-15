@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+
+		<!--start mergeCss:main.min-->
+		<link rel="stylesheet" type="text/css" href="/public/css/common/base.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/common/main.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/common/swiper.css">
+		<link rel="stylesheet" type="text/css" href="/public/font/style.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/skin/main_color.css">
+		<!--end mergeCss-->
+
+		<!--start mergeJs:lib.min-->
+		<script src="/public/js/lib/jquery-1.12.4.js"></script>
+		<script src="/public/js/common/prototype.js"></script>
+		<script src="/public/js/common/base.js"></script>
+		<script src="/public/js/lib/swiper.js"></script>
+		<script src="/public/js/common/config.js"></script>
+		<script src="/public/js/common/main.js"></script>
+		<!--end mergeJs-->
+
+
+	</head>
+	
+	<body>
+
+	<style  type='text/css'>@charset "UTF-8"; /*../web/09accountD.css*/.downloadList>li{ height: 9rem; } .downloadItem{ padding: 0 3rem; position:relative; } .selectAll{ width: 3rem; display: inline-block; border:1px solid transparent; text-align: center; } .downloadBtn,.downloadItem .label-box{ position: absolute; width: 3rem; top:-1px; height: 100%; text-align: center; overflow:hidden; } .downloadItem .label-box{ left:0; line-height: 9rem; } .downloadBtn{ right: 0; line-height: 4.5rem; border-radius: 0px; -moz-border-radius: 0px; -webkit-bordder-radius: 0px; -o-user-select: 0px } .info p{ line-height: 3rem; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }</style>
+	<div class='ls-container t-gray'>
+	<header class="header t-white tc">
+		<span class="H3">报告下载</span><i class="icon-cancel fr mr10"></i>
+	</header>
+	<div class="wrap" >
+		<div class="pl20 pt20">
+			<label class="label-box J-label-box J-selectAll">
+				<span class="selectAll"><i class="bg-icon-checkbox mr5"></i></span>
+				<input type="checkbox" >
+				<span class="text">全选</span>
+			</label>
+		</div>
+		<ul class="downloadList">
+			<li class="shadow-2 bg-white mr20 ml20 mt20">
+				<div class="downloadItem">
+					<div class="fl label-box J-label-box ">
+						<i class="bg-icon-checkbox"></i>
+						<input type="checkbox" >
+					</div>
+					<div class="info t-order bd-left pl5 pr5">
+						<p class="time">提交时间：2016-11-20</p>
+						<p class="num">检验编号：2016546564561620</p>
+						<p class="title">《易感基因全位体检套装检验报告》</p>
+					</div>
+					<div class="downloadBtn btn-success fr">下<br>载</div>
+				</div>
+			</li>
+			<li class="shadow-2 bg-white mr20 ml20 mt20">
+				<div class="downloadItem">
+					<div class="fl label-box J-label-box ">
+						<i class="bg-icon-checkbox"></i>
+						<input type="checkbox" >
+					</div>
+					<div class="info t-order bd-left pl5 pr5">
+						<p class="time">提交时间：2016-11-20</p>
+						<p class="num">检验编号：2016546564561620</p>
+						<p class="title">《易感基因全位体检套装检验报告》</p>
+					</div>
+					<div class="downloadBtn btn-success fr">下<br>载</div>
+				</div>
+			</li>
+			<li class="shadow-2 bg-white mr20 ml20 mt20">
+				<div class="downloadItem">
+					<div class="fl label-box J-label-box ">
+						<i class="bg-icon-checkbox"></i>
+						<input type="checkbox" >
+					</div>
+					<div class="info t-order bd-left pl5 pr5">
+						<p class="time">提交时间：2016-11-20</p>
+						<p class="num">检验编号：2016546564561620</p>
+						<p class="title">《易感基因全位体检套装检验报告》</p>
+					</div>
+					<div class="downloadBtn btn-success fr">下<br>载</div>
+				</div>
+			</li>
+		</ul>
+		<div class="bg-white mr20 ml20 mt20 col height1-12 mid">
+			<div class="col7">
+				<span class="ml20">
+					已选报告（<span class="J-select-num t-order">0</span>）
+				</span>
+			</div>
+			<div class="col5 bg-success fs20 fb t-white tc">
+				批量下载
+			</div>
+		</div>
+	</div>
+</div>
+	<script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../web/09accountD.js*/(function() {
+    function selectAll() {
+        var $list = $(".downloadList");
+        $(".J-selectAll").on("change", "input", function() {
+            if ($(this).prop("checked")) {
+                $list.find(".J-label-box").addClass("checked").find("input").prop("checked", true);
+            } else {
+                $list.find(".J-label-box").removeClass("checked").find("input").prop("checked", false);
+            }
+            $(".J-select-num").html($list.find(".J-label-box.checked").length);
+        });
+        $list.on("change", ".J-label-box input", function() {
+            var checkednum = $list.find(".J-label-box.checked").length;
+            var totalnum = $list.find(".J-label-box").length;
+            if (checkednum == totalnum && checkednum != 0) {
+                $(".J-selectAll").addClass("checked").find("input").prop("checked", true);
+            }
+            console.log(checkednum, totalnum);
+            if (checkednum == 0) {
+                $(".J-selectAll").removeClass("checked").find("input").prop("checked", false);
+            }
+            $(".J-select-num").html(checkednum);
+        });
+    }
+    selectAll();
+})();})();})</script>
+
+
+	</body>
+
+</html>

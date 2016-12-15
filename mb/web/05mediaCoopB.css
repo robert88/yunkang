@@ -1,0 +1,45 @@
+.share-contain .title{
+	border-bottom: 1px solid #186344;
+	color:#186344;
+	height: 3rem;
+	margin: 0 1rem 3rem 1rem;
+	position:relative;
+
+}
+.share-contain{
+	position: fixed;
+	left:0;
+	bottom:-100%;
+	width: 100%;
+	z-index: 1;
+}
+.share-contain.slideShow{
+	bottom:0%;
+}
+.share-contain .text{
+	width:80px;
+	margin-left:-40px;
+	line-height: 1.5rem;
+	position:absolute;
+	left: 50%;
+	top: 2.4rem;
+	background: #fff;
+}
+.mask{
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	background-size: 100%;
+	z-index: 1;
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+}
+.share-img{
+	height: 6rem;
+}
+.share-img img{
+	height: 80%;
+}

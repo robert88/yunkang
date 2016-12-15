@@ -1,0 +1,42 @@
+.downloadList>li{
+	height: 9rem;
+}
+.downloadItem{
+	padding: 0 3rem;
+	position:relative;
+}
+.selectAll{
+	width: 3rem;
+	display: inline-block;
+	border:1px solid transparent;
+	text-align: center;
+}
+
+.downloadBtn,.downloadItem .label-box{
+	position: absolute;
+	width: 3rem;
+	top:-1px;
+	height: 100%;
+	text-align: center;
+	overflow:hidden;
+}
+.downloadItem .label-box{
+	left:0;
+	line-height: 9rem;
+}
+.downloadBtn{
+	right: 0;
+
+	line-height: 4.5rem;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-bordder-radius: 0px;
+	-o-user-select: 0px
+}
+.info p{
+	line-height: 3rem;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}

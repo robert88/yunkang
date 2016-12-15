@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+
+		<!--start mergeCss:main.min-->
+		<link rel="stylesheet" type="text/css" href="/public/css/common/base.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/common/main.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/common/swiper.css">
+		<link rel="stylesheet" type="text/css" href="/public/font/style.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/skin/main_color.css">
+		<!--end mergeCss-->
+
+		<!--start mergeJs:lib.min-->
+		<script src="/public/js/lib/jquery-1.12.4.js"></script>
+		<script src="/public/js/common/prototype.js"></script>
+		<script src="/public/js/common/base.js"></script>
+		<script src="/public/js/lib/swiper.js"></script>
+		<script src="/public/js/common/config.js"></script>
+		<script src="/public/js/common/main.js"></script>
+		<!--end mergeJs-->
+
+
+	</head>
+	
+	<body>
+
+	<style  type='text/css'>@charset "UTF-8"; /*../web/05mediaCoopB.css*/.share-contain .title{ border-bottom: 1px solid #186344; color:#186344; height: 3rem; margin: 0 1rem 3rem 1rem; position:relative; } .share-contain{ position: fixed; left:0; bottom:-100%; width: 100%; z-index: 1; } .share-contain.slideShow{ bottom:0%; } .share-contain .text{ width:80px; margin-left:-40px; line-height: 1.5rem; position:absolute; left: 50%; top: 2.4rem; background: #fff; } .mask{ display: none; left: 0; top: 0; width: 100%; height: 100%; min-height: 350px; background-size: 100%; z-index: 1; position: fixed; background: rgba(0,0,0,0.5); } .share-img{ height: 6rem; } .share-img img{ height: 80%; }</style>
+	<div class='ls-container'>
+	<article class="wrap t-gray">
+		<header class="header t-white tc">
+			<span class="h3">行业新闻</span>
+			<i class="icon-cancel fr mr10"></i>
+		</header>
+		<div class="bg-white crumbs bd-bottom pl10 t-gray">
+			<a href="/web/01home.html">首页</a> >
+			<a href="05mediaCoopA.html">媒体合作</a> >
+			<a>行业新闻</a>
+		</div>
+		<div class="bd-bottom t-info p10">
+			<h3>一个全栈增长工程师的练习项目集,工程师的练习项目集</h3>
+			<p><span class="fs12 t-muted"> 2016/11/25</span></p>
+		</div>
+
+		<div class="content p10 bg-white">
+			<p class="t2">
+				北京健云康生物信息科技有限公司于2015年6月8日在北京市顺义区注册成立，专注于人类健康相关的高通量数据的解析与个性化分析，为医务和科研人员提供数据解析和个性化数据分析为一体的全方位数据解析方案。
+			</p>
+			<h3 class="mt20 fb mb10" style="font-weight: 700;color:#000">北京健云康生物信息科技有限公司</h3>
+			<p class="t2">
+				北京健云康生物信息科技有限公司于2015年6月8日在北京市顺义区注册成立，专注于人类健康相关的高通量数据的解析与个性化分析，为医务和科研人员提供数据解析和个性化数据分析为一体的全方位数据解析方案。
+			</p>
+		</div>
+		<footer class="t-muted tc t-info pt20 pb20 bg-white">
+			<span class="J-top"><i class="icon-arrow-up fs12 mr10" style="vertical-align: middle;"></i>返回顶部</span>
+		</footer>
+		<div class="header tc t-white J-share-btn"><span class=""><i class="icon-share-square mr10"></i>分享转发</span></div>
+	</article>
+
+	<!--s分享代码-->
+	<div class="mask"></div>
+	<article class="share-contain J-share-contain bg-white animate-ease ">
+		<div class="wrap" id="shareNode">
+			<p class="title tc ">
+				<span class="text">分享到</span>
+			</p>
+			<ul class="col tc t-gray mb20 mt20">
+				<li class="col3">
+					<a class="a-wrap nativeShare" data-app="weixin" >
+						<p class="share-img"><img src="/public/images/weixin.png" alt=""></p>
+						<p>微信好友</p>
+					</a>
+				</li>
+				<li class="col3">
+					<a class="a-wrap nativeShare" data-app="weixinFriend" >
+						<p  class="share-img"><img src="/public/images/pengyou.png"  alt=""></p>
+						<p>朋友圈</p>
+					</a>
+				</li>
+				<li class="col3">
+					<a class="a-wrap nativeShare" data-app="QZone" >
+						<p class="share-img"><img src="/public/images/qzone.png" alt=""></p>
+						<p>qq空间</p>
+					</a>
+				</li>
+				<li class="col3">
+					<a class="a-wrap nativeShare" data-app="sinaWeibo">
+						<p class="share-img"><img src="/public/images/sina.png"  alt=""></p>
+						<p>新浪微博</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header tc t-white J-share-cancel"><span class="">取消</span></div>
+	</article>
+	<!--e分享代码-->
+</div>
+	<script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../public/js/module/nativeShare.js*/(function() {
+    window.nativeShare = function(elementNode, config) {
+        if (!document.getElementById(elementNode)) {
+            return false;
+        }
+        var qApiSrc = {
+            lower: "//3gimg.qq.com/html5/js/qb.js",
+            higher: "//jsapi.qq.com/get?api=app.share"
+        };
+        var bLevel = {
+            qq: {
+                forbid: 0,
+                lower: 1,
+                higher: 2
+            },
+            uc: {
+                forbid: 0,
+                allow: 1
+            }
+        };
+        var UA = navigator.appVersion;
+        var isqqBrowser = UA.split("MQQBrowser/").length > 1 ? bLevel.qq.higher : bLevel.qq.forbid;
+        var isucBrowser = UA.split("UCBrowser/").length > 1 ? bLevel.uc.allow : bLevel.uc.forbid;
+        var version = {
+            uc: "",
+            qq: ""
+        };
+        var isWeixin = false;
+        config = config || {};
+        this.elementNode = elementNode;
+        this.url = config.url || document.location.href || "";
+        this.title = config.title || document.title || "";
+        this.desc = config.desc || document.title || "";
+        this.img = config.img || document.getElementsByTagName("img").length > 0 && document.getElementsByTagName("img")[0].src || "";
+        this.img_title = config.img_title || document.title || "";
+        this.from = config.from || window.location.host || "";
+        this.ucAppList = {
+            sinaWeibo: [ "kSinaWeibo", "SinaWeibo", 11, "新浪微博" ],
+            weixin: [ "kWeixin", "WechatFriends", 1, "微信好友" ],
+            weixinFriend: [ "kWeixinFriend", "WechatTimeline", "8", "微信朋友圈" ],
+            QQ: [ "kQQ", "QQ", "4", "QQ好友" ],
+            QZone: [ "kQZone", "QZone", "3", "QQ空间" ]
+        };
+        this.share = function(to_app) {
+            var title = this.title, url = this.url, desc = this.desc, img = this.img, img_title = this.img_title, from = this.from;
+            if (isucBrowser) {
+                to_app = to_app == "" ? "" : platform_os == "iPhone" ? this.ucAppList[to_app][0] : this.ucAppList[to_app][1];
+                if (to_app == "QZone") {
+                    B = "mqqapi://share/to_qzone?src_type=web&version=1&file_type=news&req_type=1&image_url=" + img + "&title=" + title + "&description=" + desc + "&url=" + url + "&app_name=" + from;
+                    k = document.createElement("div"), k.style.visibility = "hidden", k.innerHTML = '<iframe src="' + B + '" scrolling="no" width="1" height="1"></iframe>', document.body.appendChild(k), setTimeout(function() {
+                        k && k.parentNode && k.parentNode.removeChild(k);
+                    }, 5e3);
+                }
+                if (typeof ucweb != "undefined") {
+                    ucweb.startRequest("shell.page_share", [ title, title, url, to_app, "", "@" + from, "" ]);
+                } else {
+                    if (typeof ucbrowser != "undefined") {
+                        ucbrowser.web_share(title, title, url, to_app, "", "@" + from, "");
+                    } else {}
+                }
+            } else {
+                if (isqqBrowser && !isWeixin) {
+                    to_app = to_app == "" ? "" : this.ucAppList[to_app][2];
+                    var ah = {
+                        url: url,
+                        title: title,
+                        description: desc,
+                        img_url: img,
+                        img_title: img_title,
+                        to_app: to_app,
+                        cus_txt: "请输入此时此刻想要分享的内容"
+                    };
+                    ah = to_app == "" ? "" : ah;
+                    if (typeof browser != "undefined") {
+                        if (typeof browser.app != "undefined" && isqqBrowser == bLevel.qq.higher) {
+                            browser.app.share(ah);
+                        }
+                    } else {
+                        if (typeof window.qb != "undefined" && isqqBrowser == bLevel.qq.lower) {
+                            window.qb.share(ah);
+                        } else {}
+                    }
+                } else {}
+            }
+        };
+        this.html = function() {
+            var position = document.getElementById(this.elementNode);
+            var html = '<div class="label">分享到</div>' + '<div class="list clearfix">' + '<span data-app="sinaWeibo" class="nativeShare weibo"><i></i>新浪微博</span>' + '<span data-app="weixin" class="nativeShare weixin"><i></i>微信好友</span>' + '<span data-app="weixinFriend" class="nativeShare weixin_timeline"><i></i>微信朋友圈</span>' + '<span data-app="QQ" class="nativeShare qq"><i></i>QQ好友</span>' + '<span data-app="QZone" class="nativeShare qzone"><i></i>QQ空间</span>' + '<span data-app="" class="nativeShare more"><i></i>更多</span>' + "</div>";
+            position.innerHTML = html;
+        };
+        this.isloadqqApi = function() {
+            if (isqqBrowser) {
+                var b = version.qq < 5.4 ? qApiSrc.lower : qApiSrc.higher;
+                var d = document.createElement("script");
+                var a = document.getElementsByTagName("body")[0];
+                d.setAttribute("src", b);
+                a.appendChild(d);
+            }
+        };
+        this.getPlantform = function() {
+            ua = navigator.userAgent;
+            if (ua.indexOf("iPhone") > -1 || ua.indexOf("iPod") > -1) {
+                return "iPhone";
+            }
+            return "Android";
+        };
+        this.is_weixin = function() {
+            var a = UA.toLowerCase();
+            if (a.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        };
+        this.getVersion = function(c) {
+            var a = c.split("."), b = parseFloat(a[0] + "." + a[1]);
+            return b;
+        };
+        this.init = function() {
+            platform_os = this.getPlantform();
+            version.qq = isqqBrowser ? this.getVersion(UA.split("MQQBrowser/")[1]) : 0;
+            version.uc = isucBrowser ? this.getVersion(UA.split("UCBrowser/")[1]) : 0;
+            isWeixin = this.is_weixin();
+            if (isqqBrowser && version.qq < 5.4 && platform_os == "iPhone" || isqqBrowser && version.qq < 5.3 && platform_os == "Android") {
+                isqqBrowser = bLevel.qq.forbid;
+            } else {
+                if (isqqBrowser && version.qq < 5.4 && platform_os == "Android") {
+                    isqqBrowser = bLevel.qq.lower;
+                } else {
+                    if (isucBrowser && (version.uc < 10.2 && platform_os == "iPhone" || version.uc < 9.7 && platform_os == "Android")) {
+                        isucBrowser = bLevel.uc.forbid;
+                    }
+                }
+            }
+            this.isloadqqApi();
+            if (isqqBrowser || isucBrowser) {} else {
+                document.getElementById(elementNode).innerHTML = '<div style=" line-height: 4rem" class=" t-danger">目前该分享插件仅支持手机UC浏览器和QQ浏览器</div>';
+            }
+        };
+        this.init();
+        var share = this;
+        var items = document.getElementsByClassName("nativeShare");
+        for (var i = 0; i < items.length; i++) {
+            items[i].onclick = function() {
+                share.share(this.getAttribute("data-app"));
+            };
+        }
+        return this;
+    };
+})();;/*../web/05mediaCoopB.js*/(function() {
+    innerRequire(1);
+    function bindGoTop() {
+        $(".J-top").click(function() {
+            $("body").scrollTop(0);
+        });
+    }
+    function bindGoShare() {
+        $(".J-share-btn").click(function() {
+            $(".ls-container").css("overflow", "hidden");
+            $(".J-share-contain").addClass("slideShow");
+            $(".mask").show();
+        });
+        $(".J-share-cancel").click(function() {
+            $(".mask").hide();
+            $(".ls-container").css("overflow", "visible");
+            $(".J-share-contain").removeClass("slideShow");
+        });
+    }
+    function WeiXinShareBtn() {
+        new nativeShare("shareNode");
+    }
+    bindGoTop();
+    bindGoShare();
+    WeiXinShareBtn();
+})();})();})</script>
+
+
+	</body>
+
+</html>
