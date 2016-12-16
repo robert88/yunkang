@@ -1,0 +1,47 @@
+@import url(/public/css/module/bannar.css);
+@import url(/web/02leftnav.css);
+@import url(/web/page.css);
+.right-content .list .img{
+    height: 110px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+
+}
+.right-content .list .img img{
+    height: 100%;
+    width: 100%;
+}
+.right-content .list .name{
+    line-height: 50px;
+    font-size: 26px;
+    padding:0px 15px;
+
+}
+.right-content .list .info{
+    line-height: 30px;
+    padding:5px 15px;
+    height: 60px;
+    color:#999;
+
+}
+.right-content .list .time{
+    line-height: 45px;
+    height: 40px;
+    overflow: hidden;
+    padding: 5px 10px;
+
+}
+.right-content .list .date{
+    font-size: 32px;
+
+}
+.right-content .list .year{
+    line-height: 53px;
+    font-size: 20px;
+float: right;
+}
+.right-content .list>li>div{
+    margin:10px;
+    padding:3px;
+}

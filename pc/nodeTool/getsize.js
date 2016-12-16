@@ -44,6 +44,12 @@ $(function () {
         ctx.stroke();
 
         ctx.beginPath();
+        ctx.moveTo(x0,y0);
+        ctx.lineTo(x1,y1);
+        ctx.stroke();
+
+
+        ctx.beginPath();
         ctx.font="40px Arial";
         ctx.fillText((x1-x0)+"px "+(y0-y1)+"px",x1+10,y1+10);
 	}

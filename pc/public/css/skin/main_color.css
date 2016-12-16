@@ -18,7 +18,7 @@
     border-color: #ccc
 }
 .bd-dark {
-    border-color: #1e1e1e
+    border-color: #333
 }
 
 .bd-light-danger {
@@ -90,7 +90,7 @@
     background-color: #ccc
 }
 .bg-dark {
-    border-color: #1e1e1e
+    border-color: #333
 }
 .bg-brown{
     background-color:#9D9633;
@@ -166,7 +166,7 @@
     color: #ccc
 }
 .t-dark {
-    border-color: #1e1e1e
+    color: #333
 }
 .t-mutedLess{
     color: #504F4F
@@ -248,7 +248,7 @@
     color: #fff;
 }
 .btn-dark {
-    background-color: #1e1e1e;
+    background-color: #333;
     border-color: #000;
     color: #eee;
 }
@@ -327,7 +327,7 @@
     color: #ccc
 }
 .hr-dark:hover {
-    color: #1e1e1e
+    color: #333
 }
 .hr-light-danger:hover {
     color: #fdead9

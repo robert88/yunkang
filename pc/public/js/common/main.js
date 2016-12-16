@@ -129,6 +129,25 @@
 		})
 	}
 
+	function getNavClass(href) {
+		var map ={
+			"01home":"navhome",
+			"02team":"navteam"
+		}
+		for(var i in map){
+            if( ~href.indexOf(i) ){
+            	return map[i];
+			}
+		}
+		return map["01home.html"]
+    }
+
+	function setNav(){
+		var current  = getNavClass(window.location.href);
+		$("html").addClass(current)
+	}
+    setNav();
+
 	changeRootrem();
 	initStyle();
 	$(document).on("pageloaded", function () {

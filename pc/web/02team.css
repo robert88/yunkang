@@ -1,0 +1,29 @@
+@import url(/public/css/module/bannar.css);
+@import url(/web/02leftnav.css);
+.right-content .list .img{
+    height: 185px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+
+}
+.right-content .list .img img{
+    height: 100%;
+}
+.right-content .list .name{
+   line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+
+}
+.right-content .list .info{
+    line-height: 30px;
+    padding:5px 15px;
+    height: 106px;
+    color:#999;
+
+}
+.right-content .list>li>div{
+    margin:10px;
+    padding:3px;
+}

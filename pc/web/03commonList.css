@@ -1,0 +1,20 @@
+@import url(/public/css/module/bannar.css);
+@import url(/web/02leftnav.css);
+@import url(/web/page.css);
+.list{
+
+}
+.list>li{
+    height: 120px;
+    padding: 20px 0px 20px 140px ;
+    position:relative;
+    border-bottom: dashed 1px #dedede;
+}
+.list>li .left{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+}

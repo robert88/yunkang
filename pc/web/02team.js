@@ -1,0 +1,1 @@
+require("／web/01home.js")

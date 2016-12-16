@@ -7,7 +7,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, ul, li, dl, dt, dd, ol, pre, form, fiel
 }
 
 html, body {
-	font-family: 'Microsoft Yahei', "細明體", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	font-family: arial;
 	color: #333;
 	/*text-shadow: #fff 0 1px 0;*/
 }
