@@ -1,0 +1,55 @@
+@import url(/web/input.css);
+@import url(/web/tab.css);
+@import url(/web/02leftnav.css);
+.wrap4{
+	width: 560px;
+	padding: 40px 0 0 0 ;
+	margin: 0 auto;
+}
+.wrap4 .prev-label{
+	width: 80px;
+	height: 50px;
+	padding-right:20px ;
+	float:left;
+	line-height: 50px;
+	text-align: right;
+}
+.wrap4 .next-label{
+	width: 460px;
+	height: 50px;
+	float:left;
+	line-height: 50px;
+}
+.wrap4 .upload-box{
+	height:180px;
+}
+.wrap4 .upload-box .img{
+	height:110px;
+	width: 110px;
+}
+.wrap4 .upload-box .img img{
+	height:110px;
+	width: 110px;
+}
+fieldset{
+	margin:10px 0;
+}
+fieldset select{
+	width: 150px;
+}
+fieldset textarea{
+	width: 460px;
+	height: 140px;
+}
+fieldset.texterea{
+	height: 140px;
+}
+
+.btn-group .btn-info,.btn-group .btn-muted{
+	width: 145px;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	display: inline-block;
+	padding:0;
+}

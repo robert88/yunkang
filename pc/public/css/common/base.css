@@ -7,9 +7,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, ul, li, dl, dt, dd, ol, pre, form, fiel
 }
 
 html, body {
-	font-family: arial;
+	font-family: 'Microsoft Yahei', "細明體", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
 	color: #333;
-	/*text-shadow: #fff 0 1px 0;*/
 }
 body{
 	position: relative;
@@ -403,7 +402,7 @@ a.a-wrap{
 */
 .btn-white,.btn-light,.btn-light-gray,.btn-muted,.btn-dark,
 .btn-light-danger,.btn-danger,.btn-light-warn,.btn-warn,
-.btn-order,.btn-light-sea-green,.btn-success,.btn-light-info,
+.btn-order,.btn-light-sea-green,.btn-success,.btn-light-info,.btn-info,
 .btn-dodger-blue,.btn-link,.btn{
 	border: 1px solid transparent;
 	display: inline-block;

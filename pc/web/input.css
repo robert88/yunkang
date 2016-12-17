@@ -1,0 +1,14 @@
+input.ipt,select{
+	height: 50px;
+	line-height: 50px;
+	border:1px solid #cdcdcd;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-bordder-radius: 3px;
+	-o-user-select: 3px;
+	width:100%;
+	text-indent: 20px;
+}
+select option{
+	line-height: 30px;
+}

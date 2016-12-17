@@ -1,0 +1,62 @@
+@import url(/web/02leftnav.css);
+@import url(/web/tab.css);
+.downloadList>li{
+	height:100px;
+}
+.downloadItem{
+	padding-left: 50px;
+	position:relative;
+}
+.selectAll{
+	width: 50px;
+	display: inline-block;
+	border:1px solid transparent;
+	text-align: center;
+}
+
+.downloadBtn,.downloadItem .label-box{
+	position: absolute;
+	top:-1px;
+	text-align: center;
+	overflow:hidden;
+}
+.downloadItem .label-box{
+	left:0;
+	width: 50px;
+	top:10px;
+}
+.downloadBtn{
+	right: 20px;
+	width: 100px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-bordder-radius: 0px;
+	-o-user-select: 0px;
+	padding:0;
+	height:36px;
+	line-height:36px;
+	top:50%;
+	margin-top:-18px;
+
+}
+.info p{
+	line-height: 50px;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.downloadGroup{
+	line-height: 100px;
+	height: 100px;
+}
+.downloadGroupBtn{
+	display: inline-block;
+	border:1px solid #dedede;
+	background: #f2f2f2;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#f2f2f2));
+	height: 75px;
+	width: 170px;
+	line-height: 75px;
+	text-align: center;
+}

@@ -1,0 +1,35 @@
+@import url(/web/08sigin.css);
+fieldset{
+	position: relative;
+	padding-left:120px ;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-bordder-radius: 3px;
+	-o-user-select: 3px;
+	overflow: hidden;
+	margin: 20px 0;
+}
+fieldset .pre-label,fieldset .sendBtn{
+	color:#fff;
+	position: absolute;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	top: 0;
+}
+fieldset .pre-label{
+	left: 0;
+}
+
+fieldset .ipt{
+	margin: 0px 0px 0px -2px;
+}
+fieldset .sendBtn{
+	right: 2px;
+	top: 1px;
+	background: #90c336;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90c336), to(#1a753a ));
+}
+fieldset .btn-success{
+	padding:  0px;
+}

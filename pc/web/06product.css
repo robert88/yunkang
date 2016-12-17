@@ -1,47 +1,46 @@
-@import url(/public/css/module/bannar.css);
 @import url(/web/02leftnav.css);
-@import url(/web/page.css);
+
+.right-content .searchBtn{
+    background:url(/public/images/product/searchbtn.png) no-repeat ;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
 .right-content .list .img{
-    height: 110px;
+    position: relative;
+    width: 181px;
+    height: 156px;
+    display: inline-block;
     overflow: hidden;
-    width: 100%;
-    text-align: center;
-
 }
-.right-content .list .img img{
-    height: 100%;
-    width: 100%;
+.right-content .list .img:after{
+    content: " ";
+    background: url(/public/images/product/kuang.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
 }
-.right-content .list .name{
-    line-height: 50px;
-    font-size: 26px;
-    padding:0px 15px;
-
+.right-content .list .img>img,.right-content .list .img:after{
+   width: 100%;
+   height: 100%;
 }
-.right-content .list .info{
-    line-height: 30px;
-    padding:5px 15px;
-    height: 60px;
-    color:#999;
-
-}
-.right-content .list .time{
-    line-height: 45px;
-    height: 40px;
-    overflow: hidden;
-    padding: 5px 10px;
-
-}
-.right-content .list .date{
-    font-size: 32px;
-
-}
-.right-content .list .year{
-    line-height: 53px;
+.right-content .list h4{
+    color:#1d1d1d;
+    padding: 10px 20px;
     font-size: 20px;
-    float: right;
 }
-.right-content .list>li>div{
-    margin:10px;
-    padding:3px;
+.right-content .list>li{
+    height: 330 px;
+}
+.right-content i.cricle{
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 23px;
+    -moz-border-radius: 50%;
+    -webkit-bordder-radius: 50%;
+    -o-user-select: 50%;
+    background: #999;
 }

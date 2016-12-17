@@ -81,3 +81,14 @@
     border-left: 7px solid #fff;
     border-top: 6px solid transparent;
 }
+.left-nav-body .loginTitle{
+    color:#7cbc4e;
+    font-size: 18px;
+    line-height: 45px;
+    margin: 0 10px;
+}
+.left-nav-body .loginTitle img{
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+}

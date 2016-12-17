@@ -1,0 +1,58 @@
+@import url(/web/02leftnav.css);
+@import url(/web/tab.css);
+.downloadItem{
+	padding-left: 120px;
+	position:relative;
+}
+.selectAll{
+	width: 80px;
+	display: inline-block;
+	border:1px solid transparent;
+	text-align: center;
+}
+
+.downloadBtn,.downloadItem .label-box{
+	position: absolute;
+	top:-1px;
+	text-align: center;
+	overflow:hidden;
+}
+.downloadItem .label-box{
+	left:0;
+	width: 80px;
+	top:40px;
+}
+
+.info p{
+	line-height: 50px;
+}
+.replyimg,.msgOwnerImg{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+	margin-right:20px ;
+	overflow: hidden;
+}
+.replyimg,.msgOwnerImg{
+	top:50%;
+	left:50px;
+	margin-top:-30px;
+}
+.msgOwnerImg{
+	background: #fff;
+	left: -33px;
+	top: 50px;
+}
+.replyimg img,.msgOwnerImg img{
+	width: 100%;
+	height: 100%;
+}
+.btn-group{
+
+	padding-left:140px;
+}
+.btn-group>span{
+	width: 140px;
+	text-align: center;
+}

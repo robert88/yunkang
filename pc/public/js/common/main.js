@@ -132,14 +132,24 @@
 	function getNavClass(href) {
 		var map ={
 			"01home":"navhome",
-			"02team":"navteam"
+			"02team":"navteam",
+			"03commonList":"navmeadia",
+			"04artList":"navmeadia",
+			"05picList":"navproduct",
+			"06product":"navproduct",
+			"07business":"navbusiness",
+			"08sigin":"navhome",
+			"08signup":"navhome",
+			"09vip1":"",
+			"09vip2":"",
+			"09vip3":"",
 		}
 		for(var i in map){
             if( ~href.indexOf(i) ){
             	return map[i];
 			}
 		}
-		return map["01home.html"]
+		return map["01home"]
     }
 
 	function setNav(){
@@ -162,7 +172,16 @@
 
 	/*页面加载完毕之后*/
 	$(function(){
-        $(document).trigger("pageloaded")
+
+        $(document).trigger("pageloaded");
+
+		if($(".bannar-carousel").length){
+			var vSwiper = new Swiper('.bannar-carousel',{
+				autoplay: 3000,
+				speed: 1000
+			})
+		}
+
 	})
 
 })();

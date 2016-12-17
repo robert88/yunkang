@@ -702,6 +702,7 @@
 
 body {
 	font-size: 16px;
+	line-height: 30px;
 }
 
 /*h1,.H1,.rfs1{*/
@@ -725,10 +726,9 @@ h2,.H2 {
 /*h1,h2,h3,h4{*/
 /*font-weight: 600;*/
 /*}*/
-
 .wrap {
 	max-width: 1200px;
-	min-width: 960px;
+	min-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -890,7 +890,7 @@ h2,.H2 {
 	display: inline-block;
 
 }
-.btn-white, .btn-light, .btn-light-gray, .btn-muted, .btn-dark, .btn-light-danger, .btn-danger, .btn-light-warn, .btn-warn, .btn-order, .btn-light-sea-green, .btn-success, .btn-light-info, .btn-dodger-blue, .btn-link, .btn {
+.btn-white, .btn-light, .btn-light-gray, .btn-muted, .btn-dark, .btn-light-danger, .btn-danger, .btn-light-warn, .btn-warn, .btn-order, .btn-light-sea-green, .btn-success,.btn-info, .btn-light-info, .btn-dodger-blue, .btn-link, .btn {
 
 	border-radius:0px;
 	-moz-border-radius: 0px;
@@ -901,5 +901,8 @@ h2,.H2 {
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
-	padding: 15px 0px;
+	line-height: 35px;
+}
+.signout{
+	text-decoration: underline;
 }

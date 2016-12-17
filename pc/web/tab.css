@@ -1,0 +1,18 @@
+.tab-title{
+	line-height: 40px;
+	width: 290px;
+	height: 40px;
+	display:inline-block;
+	-moz-box-shadow:  -1px -1px 6px rgb(24, 107, 64);
+	-webkit-box-shadow: -1px -1px 6px rgb(24, 107, 64);
+	box-shadow: -1px -1px 6px rgb(24, 107, 64);
+}
+.tab-title .btn-info,.tab-title .btn-success{
+	width: 145px;
+	border: none;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	padding:0;
+}
