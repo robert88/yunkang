@@ -10,7 +10,7 @@ var mergeParseJs = require("../../toolLib/mergeParseJs.js")
 //对外接口
 function merge(parseFile, outPath,inPath) {
 	
-	var indexData = wake.readData( parseFile );
+	var indexData = wake.readData( parseFile ).replace(/#\/web\//g,"");
 
 	console.log("-------common index:".green,parseFile,"-----------".green)
 
@@ -77,7 +77,7 @@ var bulidPath = "./bulid"
 var allHtmlPath = "../web"
 
 /*整体公用文件*/
-var parseFile = "../indexToStatic.html";
+var parseFile = "../indexStatic.html";
 
 
 merge(parseFile,bulidPath,allHtmlPath);
