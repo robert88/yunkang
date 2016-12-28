@@ -1,0 +1,12 @@
+@import url(/web/leftnav.css);
+@import url(/web/page.css);
+.container-body .title{
+	line-height: 50px;
+	color:#0a54ab;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 700;
+}
+.container-body .btn-radius {
+	display: block;
+}

@@ -1,0 +1,405 @@
+
+
+/*边框颜色*/
+
+.bd-white {
+    border-color: #fff;
+}
+.bd-light{
+    border-color: #CBCDCC;
+}
+.bd-light-gray {
+    border-color: #EFEFEF;
+}
+.bd-gray{
+    border-color: #727272;
+}
+.bd-muted {
+    border-color: #ccc
+}
+.bd-dark {
+    border-color: #333
+}
+
+.bd-light-danger {
+    border-color: #fdead9
+}
+.bd-danger {
+    border-color: #da0e0e
+}
+.bd-danger.hover:hover{
+    border-color: #cb0101;
+}
+.bd-light-warn {
+    border-color: #ffffcd;
+}
+.bd-warn {
+    border-color: #ffc600
+}
+.bd-warn.hover:hover{
+    border-color: #FFD002
+}
+.bd-order {
+    border-color: #ff6402
+}
+.bd-order.hover:hover{
+    border-color: #ff6402
+}
+.bd-light-sea-green{
+    border-color: #18bbab;
+}
+.bd-success {
+    border-color: #95c53e
+}
+.bd-success.hover:hover{
+    border-color: #8FC31F
+}
+.bd-light-info {
+    border-color: #d5edf7
+}
+.bd-info {
+    border-color: #0a54ab 
+}
+.bd-info.hover:hover{
+    border-color: #0a54ab ;
+}
+.bd-dodger-blue{
+    border-color: #428bca;
+}
+.bd-link{
+    border-color: #0000cc;
+}
+.bd-link.hover:hover{
+    border-color: #0101b9
+}
+
+
+.bg-white {
+    background-color: #fff;
+}
+.bg-light{
+    background-color: #CBCDCC;
+}
+.bg-light-gray {
+    background-color: #EFEFEF;
+}
+.bg-gray{
+    background-color: #727272;
+}
+.bg-muted {
+    background-color: #ccc
+}
+.bg-dark {
+    border-color: #333
+}
+.bg-brown{
+    background-color:#9D9633;
+}
+.bg-light-danger {
+    background-color: #fdead9
+}
+.bg-danger {
+    background-color: #da0e0e
+}
+.bg-danger.hover:hover{
+    background-color: #cb0101;
+}
+.bg-light-warn {
+    background-color: #ffffcd;
+}
+.bg-warn {
+    background-color: #ffc600
+}
+.bg-warn.hover:hover{
+    background-color: #FFD002
+}
+.bg-order {
+    background-color: #ff6402
+}
+.bg-order.hover:hover{
+    background-color: #ff6402
+}
+.bg-light-sea-green{
+    background-color: #18bbab;
+}
+.bg-success {
+    background-color: #95c53e
+}
+.bg-success.hover:hover{
+    background-color: #8FC31F
+}
+.bg-light-info {
+    background-color: #d5edf7
+}
+.bg-info {
+    background-color: #0a54ab 
+}
+.bg-info.hover:hover{
+    background-color: #0a54ab ;
+}
+.bg-dodger-blue{
+    background-color: #428bca;
+}
+.bg-link{
+    background-color: #0000cc;
+}
+.bg-link.hover:hover{
+    background-color: #0101b9
+}
+
+
+/*文字颜色*/
+
+.t-white {
+    color: #fff;
+}
+.t-light{
+    color: #CBCDCC;
+}
+.t-light-gray {
+    color: #EFEFEF;
+}
+.t-gray{
+    color: #727272;
+}
+.t-muted {
+    color: #ccc
+}
+.t-dark {
+    color: #333
+}
+.t-mutedLess{
+    color: #504F4F
+}
+.t-light-danger {
+    color: #fdead9
+}
+.t-danger {
+    color: #da0e0e
+}
+.t-danger.hover:hover{
+    color: #cb0101;
+}
+.t-light-warn {
+    color: #ffffcd;
+}
+.t-warn {
+    color: #ffc600
+}
+.t-warn.hover:hover{
+    color: #FFD002
+}
+.t-order {
+    color: #ff6402
+}
+.t-order.hover:hover{
+    color: #ff6402
+}
+.t-light-sea-green{
+    color: #18bbab;
+}
+.t-success {
+    color: #95c53e
+}
+.t-success.hover:hover{
+    color: #8FC31F
+}
+.t-light-info {
+    color: #d5edf7
+}
+.t-info {
+    color: #0a54ab 
+}
+.t-info.hover:hover{
+    color: #0a54ab ;
+}
+.t-dodger-blue{
+    color: #428bca;
+}
+.t-link{
+    color: #0000cc;
+}
+.t-link.hover:hover{
+    color: #0101b9
+}
+.btn-white {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #000;
+}
+.btn-light{
+    background-color: #CBCDCC;
+    border-color: #333;
+    color: #727272;
+}
+.btn-light-gray {
+    background-color: #EFEFEF;
+    border-color: #333;
+    color: #727272;
+}
+.btn-gray{
+    background-color: #727272;
+    border-color: #ccc;
+    color: #eee;
+}
+.btn-muted {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #fff;
+}
+.btn-dark {
+    background-color: #333;
+    border-color: #000;
+    color: #eee;
+}
+.btn-light-danger {
+    background-color: #fdead9;
+    border-color: #cb0101;;
+    color: #da0e0e
+}
+.btn-danger {
+    background-color: #cb0101;
+    border-color: #da0e0e;
+    color:#fff;
+}
+.btn-light-warn {
+    background-color: #ffffcd;
+    border-color: #ffc600;
+    color: #FFD002;
+}
+.btn-warn {
+    background-color: #ffc600;
+    border-color: #FFD002;
+    color: #fff;
+}
+
+.btn-order {
+    background-color: #ff6402;
+    border-color:#ff6402;
+    color:#fff;
+}
+
+.btn-light-sea-green{
+    background-color: #18bbab;
+    border-color: #5bc0de;
+    color:#fff;
+}
+.btn-success {
+    background-color: #95c53e;
+    border-color:#8FC31F;
+    color:#fff;
+}
+.btn-light-info {
+    background-color: #d5edf7;
+    border-color:#accdd4 ;
+    color:#2d3a42;
+}
+.btn-info {
+    background-color: #0a54ab ;
+    border-color:#0a54ab ;
+    color:#fff;
+}
+.btn-dodger-blue{
+    background-color: #428bca;
+    border-color:#0101b9;
+    color:#fff;
+}
+
+.btn-link{
+    background-color: #0000cc;
+    border-color:#0101b9;
+    color:#fff;
+}
+/*文字hover效果*/
+.hr-white:hover {
+    color: #fff;
+}
+.hr-light:hover{
+    color: #CBCDCC;
+}
+.hr-light-gray:hover {
+    color: #EFEFEF;
+}
+.hr-gray:hover{
+    color: #727272;
+}
+.hr-muted:hover {
+    color: #ccc
+}
+.hr-dark:hover {
+    color: #333
+}
+.hr-light-danger:hover {
+    color: #fdead9
+}
+.hr-danger:hover {
+    color: #da0e0e
+}
+.hr-light-warn:hover {
+    color: #ffffcd;
+}
+.hr-warn:hover {
+    color: #ffc600
+}
+.hr-order:hover {
+    color: #ff6402
+}
+.hr-light-sea-green:hover{
+    color: #18bbab;
+}
+.hr-success:hover {
+    color: #95c53e
+}
+.hr-light-info:hover {
+    color: #d5edf7
+}
+.hr-info:hover {
+    color: #5bc0de
+}
+.hr-dodger-blue:hover{
+    color: #428bca;
+}
+.hr-link:hover{
+    color: #0000cc;
+}
+.hr-pointer:hover{
+    cursor: pointer;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url(/public/images/icon.png);
+    background-repeat: no-repeat;
+    width:30px;height: 30px;
+    display: inline-block;
+    vertical-align: sub;
+}
+.icon-tel{
+    background-position: 0px 0px;
+}
+body{
+    background: #fff;
+    color:#676767;
+}
+
+input:focus, textarea:focus, button:focus, select:focus {
+    border: 1px solid #FFD002
+}
+em {
+    color: #f28c48
+}
+
+.label-box .bg-icon-checkbox{
+    background-image: url(/public/images/checkbox.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: sub;
+    background-repeat: no-repeat;
+    background-position: -26px 0;
+}
+.label-box.checked .bg-icon-checkbox{
+    background-position: 0px 0px;
+}
+.label-box input[type='checkbox']{
+    display: none;
+}

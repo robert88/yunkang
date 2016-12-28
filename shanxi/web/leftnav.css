@@ -1,0 +1,82 @@
+.container{
+	padding-left:300px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom:20px;
+	min-height: 364px;
+}
+.leftNav{
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+.leftNav ul{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.leftNav li{
+	position:relative;
+	line-height: 60px;
+	background: url(/public/images/notice/line.png) center bottom  no-repeat;
+	text-align: center;
+}
+.leftNav .current{
+	color:#0a54ab
+}
+.leftNav .current:after{
+	content: " ";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: -1px;
+	top: 50%;
+	margin-top: -4px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid #0a54ab ;
+	border-left: none;
+}
+.leftNav .current:before{
+	content: " ";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	right: -1px;
+	top: 50%;
+	margin-top: -4px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #0a54ab ;
+	border-right: none;
+}
+.leftNav .title{
+	background: url(/public/images/leftnavTitle.jpg) no-repeat;
+	height: 60px;
+	color:#fff;
+	line-height: 60px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.container-body{
+	padding:0 25px 20px 25px;
+}
+.container-body .crumbs{
+	line-height: 45px;
+}
+.container-body .btn-radius {
+	padding: 0 10px;
+	height: 30px;
+	font-size: 14px;
+	background: #f0f0f0 ;
+	font-weight: 400;
+	line-height: 30px;
+	border-radius: 15px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-bordder-radius: 15px;
+	-o-user-select: 15px;
+	display: inline-block;
+
+}

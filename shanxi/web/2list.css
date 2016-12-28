@@ -1,0 +1,24 @@
+@import url(/web/leftnav.css);
+@import url(/web/page.css);
+
+.container-body .title{
+	line-height: 50px;
+	color:#0a54ab;
+	font-size: 16px;
+}
+.container-body>ul>li{
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #c1c1c1;
+}
+.page .triangle{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	right: 3px;
+	top: 50%;
+	margin-top:-5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 7px solid #999;
+	border-right: none;
+}

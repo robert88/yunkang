@@ -1,0 +1,55 @@
+@import url(/web/leftnav.css);
+@import url(/web/page.css);
+.container-body .title{
+	line-height: 50px;
+	color:#0a54ab;
+	font-size: 16px;
+	text-align: center;
+}
+.container-body .label{
+	text-align: center;
+	width:25%;
+	color:#0a54ab;
+}
+.container-body table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container-body tr{
+	line-height: 42px;
+}
+.container-body td{
+	border: 1px solid #c1c1c1;
+}
+.container-body input{
+	border: none;
+	width: 100%;
+	text-indent: 5px;
+}
+
+.container-body textarea{
+	border: none;
+	width: 100%;
+	text-indent: 5px;
+	height: 156px;
+	font-size: 14px;
+	vertical-align: top;
+	padding-top: 5px;
+}
+.container-body input:focus,
+.container-body textarea:focus{
+	outline: none;
+	border: none;
+}
+.container-body .text-area{
+	height: 156px;
+}
+.container-body .checkcode input{
+	vertical-align: middle;
+	width: 40%;
+}
+.container-body .checkcode img{
+	vertical-align: middle;
+}
+

@@ -1,0 +1,37 @@
+
+.page .next,.page .prev,.page a{
+    border:1px solid #dedede;
+    line-height: 25px;
+
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    display: inline-block;
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-bordder-radius: 3px;
+    -o-user-select: 3px
+}
+.page .total{
+    line-height: 25px;
+}
+.page a{
+    width: 18px;
+    margin-left: 5px;
+}
+.page a.current{
+    background: #0b4a9a ;
+    border:1px solid #0b4a9a ;
+    color:#fff;
+}
+.page .next,.page .prev{
+    width: 62px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.page .next.forbid,.page .prev.forbid{
+    color:#ddd;
+
+}
