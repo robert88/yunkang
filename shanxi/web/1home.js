@@ -5,5 +5,6 @@ var mySwiper = new Swiper('.swiper-container', {
 	pagination: '.swiper-pagination',
 	paginationBulletRender: function (swiper, index, className) {
 		return '<span class="' + className + '">' + (index + 1) + '</span>';
-	}
+	},
+	paginationClickable:true
 });

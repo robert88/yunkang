@@ -1,3 +1,102 @@
+	.ls-container .hot{
+		padding: 45px 300px 45px 0;
+		position:relative;
+	}
+
+	.ls-container .hot-left{
+		height: 450px;
+	}
+	.ls-container .hot-left .img>img{
+		width: 100%;
+		height: 240px;
+	}
+	.ls-container .hot-left .title{
+		line-height: 45px;
+		color:#0a54ab;
+	text-align: center;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.ls-container .hot-left .btn-info{
+		width: 86px;
+		position: relative;
+		line-height: 25px;
+	}
+	.ls-container .hot-left .triangle{
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		right: 14px;
+		top: 50%;
+		margin-top: -5px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 7px solid #fff;
+		border-right: none;
+	}
+	.ls-container .hot-left .hot-list>p{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space:nowrap;
+		padding-left:30px;
+	}
+	.ls-container .hot-left .hot-list>hr{
+		margin: 20px 0 20px 30px;
+	}
+	.ls-container .hot-left .hot-list>p:hover{
+		color:#0a54ab;
+	}
+	.ls-container .hot-right{
+		position:absolute;
+		right:0px;
+		top:45px;
+		background: url(/public/images/rightbg.jpg) no-repeat;
+		width: 217px;
+		height: 441px;
+		background-size: 100% 100%;
+	}
+	.ls-container .hot-right .btn-light-info{
+		width: 175px;
+		line-height: 30px;
+	}
+	.ls-container .hot-right li{
+		margin-top: 15px;
+	}
+	.ls-container .hot-right ul{
+		margin-top: 106px;
+	}
+	.hot-left .swiper-pagination{
+		top: 221px;
+		height:28px
+	}
+
+	.hot-left .swiper-pagination-bullet {
+		width: 23px;
+		height: 14px;
+		display: inline-block;
+		border-radius: 0;
+		background: #070707;
+		opacity: 1;
+		color:#fff;
+		line-height: 14px;
+	}
+	.hot-left .swiper-pagination-bullet-active {
+		background:#ce0609 ;
+		position: relative;
+	}
+	.hot-left .swiper-pagination-bullet-active:after {
+		position: absolute;
+		content: " ";
+		width: 0px;
+		height: 0px;
+		left: 50%;
+		top: -4px;
+		margin-left: -5px;
+		border-top: none;
+		border-bottom: 5px solid #ce0609;
+		border-left: 5px solid transparent;
+		border-right:  5px solid transparent;
+	}
 .notice>.col{
 	height: 450px;
 }
