@@ -1,0 +1,13 @@
+@import url(/web/blueForm.css);
+@import url(/web/blueTable.css);
+.midde-gray{
+    background:#fafafa;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;padding:20px 0;
+}
+.midde-gray .layui-input-block{
+    margin-left:0px;
+    margin-bottom: 15px;
+}
+
+.layui-form-label{
+    font-weight: bold;
+}

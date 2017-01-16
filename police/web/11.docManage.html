@@ -1,0 +1,133 @@
+<div class='ls-container'>
+
+    <div class="turnback">
+        <a onclick="history.back(-1)" class="layui-btn layui-btn-primary">返回</a>
+    </div>
+
+    <!--s:受案不规范-->
+    <form class="layui-form layui-form-pane1" action="">
+
+        <div class="layui-form-wrap mt20">
+            <div class="layui-form-item layui-form-item-wrap">
+                <label class="layui-form-label" style="margin-left:144px">关键字搜索</label>
+                <div class="layui-input-inline ">
+                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-input-inline ">
+                    <button class="layui-btn subBtn" lay-submit="" lay-filter="*">搜索</button>
+                </div>
+            </div>
+
+            <a class="layui-btn layui-btn-opa-icon adminUploadBtn"><span class="color-icon-adminupload"></span>管理员文档上传</a>
+        </div>
+
+
+            <table class="layui-table" lay-even>
+                <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox"  class="layui-select-all">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                class="layui-icon"></i></div>
+                    </th>
+                    <th>文档编号</th>
+                    <th>文档名称</th>
+                    <th>关键字</th>
+                    <th>最后修订时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                class="layui-icon"></i></div>
+                    </td>
+                    <td>2284000</td>
+                    <td><a href="刑事案件办理流程.doc" target="_blank"><i class="color-icon-wordicon"></i>刑事案件办理流程.doc</a></td>
+                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>
+                        <div class="btn-wrap">
+                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
+                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                class="layui-icon"></i></div>
+                    </td>
+                    <td>2284000</td>
+                    <td><a href="刑事案件办理流程.xls" target="_blank"><i class="color-icon-excelicon"></i>刑事案件办理流程.xls</a></td>
+                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>
+                        <div class="btn-wrap">
+                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
+                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                class="layui-icon"></i></div>
+                    </td>
+                    <td>2284000</td>
+                    <td><a href="刑事案件办理流程.pdf" target="_blank"><i class="color-icon-pdficon"></i>刑事案件办理流程.pdf</a></td>
+                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>
+                        <div class="btn-wrap">
+                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
+                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                class="layui-icon"></i></div>
+                    </td>
+                    <td>2284000</td>
+                    <td><a href="刑事案件办理流程.jpg" target="_blank"><i class="color-icon-jpgicon"></i>刑事案件办理流程.jpg</a></td>
+                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>
+                        <div class="btn-wrap">
+                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
+                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="20">
+                        <div class="layui-form no-border  pageFooter-wrap">
+                            <div class="layui-inline" style="z-index: 1;margin-left: 10px">
+                                <input type="checkbox" class="layui-select-all">
+                                <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
+                                        class="layui-icon"></i></div>
+                                <span class="mr30">全选</span>
+                                <a class="layui-btn layui-btn-opa delSelectItem">删除所选</a>
+                                <a class="layui-btn layui-btn-opa  ">搜索记录</a>
+                                <a class="layui-btn layui-btn-opa  ">查阅记录</a>
+                                <a class="layui-btn layui-btn-opa  ">上传记录</a>
+                            </div>
+                            <div id="pageFooter"></div>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+    </form>
+    <!--e:受案不规范-->
+
+</div>

@@ -1,0 +1,5 @@
+@import url(/web/blueTable.css);
+.ls-container .layui-table thead tr {
+    background-color: #db512c;
+    color:#fff;
+}

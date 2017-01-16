@@ -1,0 +1,52 @@
+.layui-input, .layui-textarea, .layui-select{border: 1px solid #3499cd;}
+.layui-input:hover, .layui-textarea:hover{border-color: #8bb6d2 !important;}
+.layui-input:focus, .layui-textarea:focus{border-color: #3c9dcd !important;}
+nav,header{
+	display: none;
+}
+.ls-container{
+	position: fixed;
+	width: 100%;
+	min-height: 500px;
+	height: 100%;
+	background: url(/public/images/login/bg.jpg) no-repeat center center;
+}
+.ls-container .wrap{
+	position:absolute;
+	top:50%;
+	left:50%;
+	font-size:16px;
+	width: 382px;
+	margin-left: -200px;
+	text-align: center;
+}
+.ls-container form{
+	margin-top:20px;
+}
+.ls-container form .layui-btn{
+	width: 100%;
+}
+.ls-container form fieldset{
+	position: relative;
+	margin:0px;
+	padding: 0px;
+	margin-top:20px;
+}
+.ls-container form i{
+	position: absolute;
+	color:#6fb4ff;
+	left:0;
+	top:50%;
+	font-size:18px;
+	margin-top:-9px;
+	margin-left:10px;
+}
+.ls-container form input{
+	padding-left: 30px;
+}
+.ls-container .bottom{
+	margin-top:50px;
+	font-size: 12px;
+	text-decoration: underline;
+	color: #fff;
+}

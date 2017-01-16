@@ -1,0 +1,17 @@
+@import url(/web/blueTable.css);
+@import url(/web/blueForm.css);
+
+.layui-form-item.echat-title{
+    margin-left:10px;
+    padding-left:10px;
+    border-left:3px solid #0aa5ff;
+}
+.layui-form-item.echat-wrap{
+    margin:20px;
+    padding:20px;
+    border-left:3px solid #0aa5ff;
+    border:1px solid #c1c1c1;
+}
+.layui-form-item.echat-wrap .echat-contain{
+    height: 370px;
+}

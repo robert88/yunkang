@@ -1,0 +1,22 @@
+@import url(/web/blueTable.css);
+@import url(/web/blueForm.css);
+#pageFooter{
+    padding-left:480px ;
+    width: auto;
+    min-width: 500px;
+}
+.layui-form-wrap{
+    position:relative;
+}
+.adminUploadBtn{
+    position:absolute;
+    right:10px;
+    top:0%;
+   color: #db5700
+}
+.adminUploadBtn:hover{
+    color: #db5700
+}
+.adminUploadBtn span{    vertical-align: middle;
+
+}

@@ -1,0 +1,43 @@
+
+<div class='ls-container'>
+	<ul class="top-group">
+		<li>
+			<div class="title layui-bg-green"><i class="icon-user2"></i></div>
+			<div class="info">
+				<p class="text">在线人员</p>
+				<p class="num">3/20</p>
+			</div>
+		</li>
+		<li>
+			<div class="title layui-bg-green"><i class="icon-remind"></i></div>
+			<div class="info">
+				<p class="text">今日警情处理</p>
+				<p class="num">3/20</p>
+			</div>
+		</li>
+		<li>
+			<div class="title layui-bg-green"><i class="icon-set2"></i></div>
+			<div class="info">
+				<p class="text">系统设置 <i class="icon-right-dir"></i></p>
+				<p class="text">权限设置 <i class="icon-right-dir"></i></p>
+				<p class="text">账号分配 <i class="icon-right-dir"></i></p>
+			</div>
+		</li>
+	</ul>
+
+	<div class="lastly">
+		<h3>最近一个月接处警情况分析</h3>
+		<div class="layui-tab layui-tab-brief" lay-filter="test">
+			<ul class="layui-tab-title">
+				<li class="">综合分析</li>
+				<li class="">警情</li>
+				<li class="layui-this">处理</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item policeCaseAnalysis"></div>
+				<div class="layui-tab-item policeCase" ></div>
+				<div class="layui-tab-item layui-show policeCaseHandler"></div>
+			</div>
+		</div>
+	</div>
+</div>

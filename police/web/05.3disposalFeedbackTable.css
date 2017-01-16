@@ -1,0 +1,26 @@
+@import url(/web/blueForm.css);
+@import url(/web/blueTable.css);
+.layui-form-title .turnback{
+	position: absolute;
+	margin-left: 20px;
+	left:0;
+	top:50%;
+	margin-top:-19px;
+}
+.layui-table .title{
+	font-weight: 700;
+}
+.layui-form-item-wrap .index{
+	color:#cc0000;
+text-align: right;
+}
+.layui-upload-file-wrap input{
+	width: 84%;vertical-align:middle;display: inline-block
+}
+.layui-upload-file-wrap .layui-box{
+	width: 15%;
+	background: #e2e2e2;
+	-moz-box-shadow:1px 11px 14px #f4f4f4 inset;            /* For Firefox3.6+ */
+	-webkit-box-shadow:1px 11px 14px #f4f4f4 inset;        /* For Chrome5+, Safari5+ */
+	box-shadow: 1px 11px 14px #f4f4f4 inset;
+}

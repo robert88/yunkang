@@ -1,0 +1,2909 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>课件管理--图片管理</title>
+	<link href="css/datepicker.css" rel="stylesheet" />
+	<link href="css/common.css" rel="stylesheet" />
+	<link href="css/course.css" rel="stylesheet" />
+	<link href="css/courseware.css" rel="stylesheet" />
+	<link href="css/coursewarehtml.css" rel="stylesheet" />
+	<link href="css/coursewarepic.css" rel="stylesheet" />
+</head>
+<body>
+<!--=S 头部 -->
+<div class="header">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" /></a>
+	</div>
+	<!--=S 头部右侧内容 -->
+	<div class="topRight">
+		<img src="images/userImg.png" class="userImg" />
+		<!-- 用户专区 -->
+		<div class="dropDown">
+			<p class="dropTitle"><i></i>YI GAOGUO</p>
+			<div class="dropMenu">
+				<i class="icon"></i>
+				<ul class="menuList">
+					<li>
+						<p class="listTitle selected"><a href="javascript:;"><i class="arrow"></i>中文</a></p>
+						<ul class="subList">
+							<li class="selected"><a href="#">中文</a></li>
+							<li class="last"><a href="#">English</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;"><i class="arrow"></i>注销</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 产品与解决方案 -->
+		<div class="dropDown">
+			<p class="dropTitle"><i></i>产品与解决方案</p>
+			<div class="dropMenu">
+				<i class="icon"></i>
+				<ul class="menuList">
+					<li>
+						<a href="#"><i class="arrow"></i>菜单一</a>
+					</li>
+					<li>
+						<a href="#"><i class="arrow"></i>菜单二</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--=E 头部右侧内容 -->
+</div>
+<!--=E 头部 -->
+<!--=S 主体内容区 -->
+<div class="wrapper">
+	
+<!--=S 左侧导航 -->
+<div class="leftBar">
+    <ul class="navList">
+        <li>
+            <p class="listTitle">
+                <a href="index.html">
+                    <i class="homeIcon"></i>
+                    <span>首页</span>
+                </a>
+            </p>
+            <!--<a href="index.html"><i class="homeIcon"></i>首页</a>-->
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon zimenhu"></i>
+                <span>子门户管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="子门户管理--新增.html">子门户新增</a></li>
+                <li><a href="子门户管理--大图显示.html">子门户维护</a></li>
+                <!--<li><a href="子门户管理--列表显示.html" data-map="子门户管理--大图显示.html">子门户列表显示</a></li>
+                <li><a href="子门户管理--新增预览.html" data-map="子门户管理--新增.html">子门户新增预览</a></li>-->
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon zhuanqu"></i>
+                <span>专区管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="专区管理--新增.html">专区新增</a></li>
+                <li><a href="专区管理--列表显示.html">专区维护</a></li>
+                <!--<li><a href="专区管理--新增预览.html" data-map="专区管理--新增.html">新增预览</a></li>-->
+            </ul>
+        </li>
+        <li >
+            <p class="listTitle">
+                <i class="icon kecheng"></i>
+                <span>课程管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList" >
+                <li><a href="课程管理--新增.html">课程新增</a></li>
+                <li ><a href="课程管理--大图显示.html">课程维护</a></li>
+                <!--<li><a href="课程管理--列表显示.html" data-map="课程管理--大图显示.html">列表显示</a></li>
+                <li><a href="课程管理--权限设置.html" data-map="课程管理--新增.html">权限设置</a></li>
+                <li><a href="课程管理--新增.html" data-map="课程管理--新增.html">课程新增</a></li>-->
+            </ul>
+        </li>
+        <li class='current open '>
+            <p class="listTitle">
+                <i class="icon kejian"></i>
+                <span>课件管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList" style="display:block;">
+                <li ><a href="课件管理－01视频管理.html">视频</a></li>
+                <li><a href="课件管理－06文档管理.html">文档</a></li>
+                <li class='current '><a href="课件管理－05图片管理.html">图片</a></li>
+                <li><a href="课件管理－04试卷管理.html">测验</a></li>
+                <li><a href="课件管理－03题目管理.html">题目</a></li>
+                <li><a href="课件管理－02网页管理.html">网页</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon renwu"></i>
+                <span>任务管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="任务--新增.html">任务新增</a></li>
+                <li><a href="任务--任务维护.html">任务维护</a></li>
+                <!--<li><a href="任务--新增任务完成.html" data-map="任务--新增.html">新增任务完成</a></li>-->
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon kaoshi"></i>
+                <span>考试管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="考试--编辑试卷.html">考试新增</a></li>
+                <li><a href="考试--维护.html">考试维护</a></li>
+                <!--<li><a href="考试--关联课程--已关联.html"  data-map="考试--编辑试卷.html">关联课程--已关联</a></li>
+                <li><a href="考试--关联课程.html"  data-map="考试--编辑试卷.html">关联课程</a></li>
+                <li><a href="考试--关联课程列表显示.html"  data-map="考试--编辑试卷.html">关联课程列表显示</a></li>
+                <li><a href="考试--权限新增群组.html"  data-map="考试--编辑试卷.html">权限新增群组</a></li>
+                <li><a href="考试--权限新建群组弹窗.html"  data-map="考试--编辑试卷.html">权限新建群组弹窗</a></li>
+                <li><a href="考试--权限设置.html"  data-map="考试--编辑试卷.html">权限设置</a></li>
+                <li><a href="考试--维护列表显示.html"  data-map="考试--维护大图显示.html">维护列表显示</a></li>
+                <li><a href="考试--编辑试卷01.html"  data-map="考试--编辑试卷.html">编辑试卷01</a></li>-->
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon mooc"></i>
+                <span>MOOC管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="mooc基本信息填写.html">mooc新增</a></li>
+                <li><a href="mooc--维护.html">mooc维护</a></li>
+                <!--<li><a href="mooc--权限设置.html" data-map="mooc基本信息填写.html">权限设置</a></li>
+                <li><a href="mooc--权限设置新增群组.html" data-map="mooc基本信息填写.html">权限设置新增群组</a></li>
+                <li><a href="mooc--维护列表显示.html" data-map="mooc--维护大图显示.html">维护列表显示</a></li>
+                <li><a href="mooc班级管理.html" data-map="mooc--维护大图显示.html">mooc班级管理</a></li>
+                <li><a href="mooc班级管理作业详情.html" data-map="mooc--维护大图显示.html">mooc班级管理作业详情</a></li>
+                <li><a href="mooc班级管理开班设置查看详情.html" data-map="mooc--维护大图显示.html">mooc班级管理开班设置查看详情</a></li>
+                <li><a href="mooc班级管理显示.html" data-map="mooc--维护大图显示.html">mooc班级管理显示</a></li>
+                <li><a href="mooc课程大纲.html" data-map="mooc基本信息填写.html">mooc课程大纲</a></li>-->
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon mainshou"></i>
+                <span>面授管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="面授管理--新增基本信息.html">面授新增</a></li>
+                <li><a href="面授管理--维护.html">面授维护</a></li>
+                <!--
+                <li><a href="面授管理--面授新增--编辑课程表.html" data-map="面授管理--新增基本信息.html">面授新增--编辑课程表</a></li>
+                <li><a href="面授管理--报名管理.html" data-map="面授管理--维护.html">报名管理</a></li>
+                <li><a href="面授管理--班级管理.html" data-map="面授管理--维护.html">班级管理</a></li>
+                <li><a href="面授管理--班级新增--基本信息.html" data-map="面授管理--维护.html">基本信息</a></li>
+                <li><a href="面授管理--班级新增--编辑课程表.html" data-map="面授管理--维护.html">编辑课程表</a></li>
+                <li><a href="面授管理--班级新增--权限管理.html" data-map="面授管理--维护.html">权限管理</a></li>
+                -->
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon baobiao"></i>
+                <span>报表管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="报表--学习记录.html">学习记录</a></li>
+                <li><a href="报表--课件学习.html">课件学习</a></li>
+                <li><a href="报表--考试结果.html">考试结果</a></li>
+                <li><a href="报表--mooc学习记录.html">mooc学习记录</a></li>
+                <li><a href="报表--积分管理.html">积分管理</a></li>
+                <li><a href="报表--学习印象.html">学习印象</a></li>
+                <li><a href="报表--学习评论.html">学习评论</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="listTitle">
+                <i class="icon quanxian"></i>
+                <span>权限管理</span>
+                <i class="arrow"><i></i></i>
+            </p>
+            <ul class="subList">
+                <li><a href="权限管理--新增群组.html">权限新增</a></li>
+                <li><a href="权限管理--权限维护.html">权限维护</a></li>
+                <!--<li><a href="权限管理--新建群组弹窗.html" data-map="权限管理--新增群组.html">新建群组弹窗</a></li>-->
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--=E 左侧导航 -->
+	<!--=S 主体内容 -->	
+	<div class="main">
+		<div class="mainInner">
+			<!-- 面包屑 -->
+			<div class="crumbs">
+				<a href="index.html">首页</a> > <a href="课件管理－05图片管理.html">课件管理</a> > <span class="current">图片维护</span>
+				<style>
+					.hoverMenu{
+						position:relative;
+						z-index: 1;
+					}
+					.hoverMenu .tips{
+						display: none;
+						position:absolute;left:0px;top:0px;
+						padding-top:41px;
+					}
+					.hoverMenu:hover .tips{
+						display: block;
+					}
+					.hoverMenu .allowIcon{
+						position: absolute;
+						top: 33px;
+						left: 65%;
+						margin-left: -7px;
+						border-bottom: 9px solid #fff;
+						border-left: 7px solid transparent;
+						border-right: 7px solid transparent;
+						z-index: 1;
+					}
+					.hoverMenu .allowIconbg{
+						position: absolute;
+						top: 31px;
+						left: 65%;
+						margin-left: -7px;
+						border-bottom: 9px solid #e8e8e8;
+						border-left: 7px solid transparent;
+						border-right: 7px solid transparent;
+					}
+					.hoverMenu .hoverMenuList{
+						width: 156px;
+						padding-top:3px;
+						border: 1px solid #ddd;
+						border-radius: 5px;
+						box-shadow: 0 4px 6px #aaa;
+						background: #fff;
+					}
+					.hoverMenu .hoverMenuList > li a{
+						display: block;
+						padding: 10px 10px 10px 20px;
+						border-bottom: 1px solid #e8e8e8;
+					}
+					.hoverMenu .hoverMenuList > li a:hover{
+						background-color: #e8e8e8;
+					}
+					.courseListNav .navMenu {
+						float: left;
+						width: 410px;
+						margin-bottom: -2px;
+					}
+				</style>
+				<div class="addCourse btn green hoverMenu">
+					<i></i>新增图片
+					<div class="tips">
+						<span class="allowIcon"></span>
+						<span class="allowIconbg"></span>
+						<ul class="hoverMenuList">
+							<li>
+								<a class="J-popup" data-popup-id="#addbannarPagePopup" data-popup-page="./课件管理－05图片管理-新增bannar(弹窗).html">新增子门户bannar</a>
+							</li>
+							<li>
+								<a class="J-popup" data-popup-id="#addbannarPagePopup" data-popup-page="./课件管理－05图片管理-新增bannar(弹窗).html">新增专区bannar</a>
+								</li>
+							<li>
+								
+								<a class="J-popup" data-popup-id="#addclasspicPagePopup" data-popup-page="./课件管理－05图片管理-新增课程图片(弹窗).html">新增课程图片</a>
+							</li>
+							<li>
+								
+								<a class="J-popup" data-popup-id="#addlogoPagePopup" data-popup-page="./课件管理－05图片管理-新增logo(弹窗).html">新增logo</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--=S 搜索条件 -->
+			<div class="search">
+				<h2>搜索条件</h2>
+				<div class="form searchForm">
+					<form>
+						<ul class="controlList course">
+							<li>
+								<label>图片名称</label>
+								<input type="text" class="text" placeholder="" />
+							</li>
+							<li>
+								<label>图片编码</label>
+								<input type="text" class="text" placeholder="" />
+							</li>
+							<li>
+								<label>创建人</label>
+								<div class="cjr">
+									<input type="text" class="text" placeholder="" />
+									<i class="peopel_icon"></i>
+								</div>
+								
+							</li>
+							<li>
+								<label>创建日期</label>
+								<div class="dateTime">
+								<span class="dateSelect"></span>
+								<input type="text" class="text" placeholder="">
+								</div>
+							</li>
+						</ul>					
+						<div class="btnList">
+							<span class="packUp hide"><i class="icon"></i></span>
+							<input type="reset" value="重置" class="btn reset" />
+							<input type="button" value="搜索" class="btn blue" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--=E 搜索条件 -->
+			<!--=S 图片列表tab -->	
+			<a id="courseListTag"></a>			
+			<div class="courseListNav tabMenu">
+				<ul class="navMenu floatList col4">
+					<li class="current">专区bannar</li>
+					<li>子门户banner</li>
+					<li>课程图片</li>
+					<li>logo</li>
+				</ul>
+			</div>
+			<!--=E 图片列表tab -->	
+			<!--=S 专区bannar list -->
+			<div class="courseListWrap current imglist">
+				<div class="selectAll selectAllCourse">
+					<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+				</div>
+				<ul class="floatList col4 courseList">
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/areaBanner01.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">专区风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				<ul>
+				<!--=S 分页 -->
+				<div class="pages clearfix" >
+					<a href="javascript:;" class="forbid prev"><i></i></a>
+					<!--<a href="#" class="prev"><i></i></a>-->
+					<a href="#" class="current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="javascript:;" class="shenglue">......</a>
+					<a href="#" class="next"><i></i></a>
+					<!-- 没有下一页用 <a href="javascript:;" class="forbid next"><i></i></a>-->
+					<span class="total">总：1440条</span>
+					
+					<span class="tiaozhuan">
+						<span class="">跳转到：</span>
+						<input type="text"><span class="goBtn">GO</span>
+					</span>
+				</div>
+				<!--=E 分页 -->
+			</div>
+			<!--=e 专区bannar list -->
+			<!--=S 子门户bannar list -->
+			<div class="courseListWrap zmhbannerlist">
+				<div class="selectAll selectAllCourse">
+					<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+				</div>
+				<ul class="floatList col4 courseList">
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/defaultBanner.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type">
+									<span class="text">门户风景摄影案例欣赏.jpg</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editzmhbannarPagePopup" data-popup-page="./课件管理－05图片管理-编辑bannar(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				<ul>
+				<!--=S 分页 -->
+				<div class="pages clearfix" style="display: none;">
+					<a href="javascript:;" class="forbid prev"><i></i></a>
+					<!--<a href="#" class="prev"><i></i></a>-->
+					<a href="#" class="current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="javascript:;" class="shenglue">......</a>
+					<a href="#" class="next"><i></i></a>
+					<!-- 没有下一页用 <a href="javascript:;" class="forbid next"><i></i></a>-->
+					<span class="total">总：1440条</span>
+					
+					<span class="tiaozhuan">
+						<span class="">跳转到：</span>
+						<input type="text"><span class="goBtn">GO</span>
+					</span>
+				</div>
+				<!--=E 分页 -->
+			</div>
+			<!--=e 子门户bannar list -->
+			<!--=S 课程图片 list -->
+			<div class="courseListWrap kctplist">
+				<div class="selectAll selectAllCourse">
+					<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+				</div>
+				<ul class="floatList col4 courseList">
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="fullimg" src="images/courseImg.jpg" />
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">courseImg.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editclasspicPagePopup" data-popup-page="./课件管理－05图片管理-编辑课程图片(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				<ul>
+				<!--=S 分页 -->
+				<div class="pages clearfix" style="display: none;">
+					<a href="javascript:;" class="forbid prev"><i></i></a>
+					<!--<a href="#" class="prev"><i></i></a>-->
+					<a href="#" class="current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="javascript:;" class="shenglue">......</a>
+					<a href="#" class="next"><i></i></a>
+					<!-- 没有下一页用 <a href="javascript:;" class="forbid next"><i></i></a>-->
+					<span class="total">总：1440条</span>
+					
+					<span class="tiaozhuan">
+						<span class="">跳转到：</span>
+						<input type="text"><span class="goBtn">GO</span>
+					</span>
+				</div>
+				<!--=E 分页 -->
+			</div>
+			<!--=E 课程图片 list -->
+			<!--=S logo list -->
+			<div class="courseListWrap logolist">
+				<div class="selectAll selectAllCourse">
+					<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+				</div>
+				<ul class="floatList col4 courseList">
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimen1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liBox">
+							<div class="litopwrap" >
+								<div class="litop" >
+									<span class="checkboxWrap"><input type="checkbox" class="checkbox" /></span>
+									<img class="compressimg" src="images/zimenhuLogo1.png" />
+									<p>zimenhu Logo</p>
+								</div>
+							</div>
+							<div class="btnList">
+								<div class="type yifabu">
+									<span class="text">zimenhuLogo1.png</span>
+								</div>
+								<div class="r">
+									<a data-popup-id="#editPicPagePopup" data-popup-page="./课件管理－05图片管理-编辑logo(弹窗).html" class="J-popup">
+										<span class="editIcon iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>编辑</span>
+										</span>
+									</a>
+									<a href="download.zip" download="mp3">
+										<span class="down iconBtn">
+											<span class="icon"></span>
+											<span class="tips"><i></i>下载</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--=S 分页 -->
+				<div class="pages clearfix">
+					<a href="javascript:;" class="forbid prev"><i></i></a>
+					<!--<a href="#" class="prev"><i></i></a>-->
+					<a href="#" class="current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="javascript:;" class="shenglue">......</a>
+					<a href="#" class="next"><i></i></a>
+					<!-- 没有下一页用 <a href="javascript:;" class="forbid next"><i></i></a>-->
+					<span class="total">总：1440条</span>
+					
+					<span class="tiaozhuan">
+						<span class="">跳转到：</span>
+						<input type="text"><span class="goBtn">GO</span>
+					</span>
+				</div>
+				<!--=E 分页 -->
+			</div>
+			<!--=E logo list -->
+		<!--=S 底部浮动栏-->
+		<div class="bottomFloatBar alignR">
+			<span class="btn globalDel">删<span class="opc">&nbsp;</span>除</span>
+			<a href="download.mp4" download="mp3"><span class="btn">下<span class="opc">&nbsp;</span>载</span></a>
+			<span class="btn blue J-popup" data-popup-id="#previewPagePopup" data-popup-page="./课件管理－01视频管理-更改域(弹窗).html">更换域</span>
+		</div>
+		<!--=E 底部浮动栏-->
+	</div>
+	<!--=E 主体内容 -->
+</div>
+</div>	
+<!--=E 主体内容区 -->
+<!-- footer -->
+<div class="footer">
+	<p class="l">版权所有 © 华为技术有限公司 2016. 保留一切权利</p>
+	<div class="r footerNav">
+		<a href="#">意见反馈</a>  |  <a href="#">网站地图</a>  |  <a href="#">W3 论坛</a>  |  <a href="#">帮助中心</a>
+	</div>
+</div>
+<script src="js/common/jquery-1.11.1.min.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/common/datepicker.js"></script>
+<script src="js/course.js"></script>
+<script src="js/loadPopup.js"></script>
+	<style type="text/css">
+		/*#addbannarPagePopup{display: none; margin-top: -333px; top:50%;overflow: hidden; position: absolute;width: 1080px;left: 50%;margin-left: -540px;border-radius: 5px;}*/
+		#addbannarPagePopup .content{background: #fff;}
+		#addbannarPagePopup .content .uploadExplain,
+		#addbannarPagePopup .content .uploadWrap{width: 50%;}
+		#addbannarPagePopup .content .uploadExplain{padding-top: 26px;height: 331px;overflow-y: auto;}
+		#addbannarPagePopup .content .uploadWrap{position: relative;height:300px;}
+		#addbannarPagePopup .content .uploadWrap .uploadInner{margin-left: 36px;padding-top: 20px;}
+		#addbannarPagePopup .uploadBtn{position: relative;}
+		#addbannarPagePopup .uploadBtn .bg{left: 16px; top: 10px; position: absolute;width: 18px;height: 16px; background: url(../images/upload.png);}
+		#addbannarPagePopup .uploadBtn input{position: absolute;width: 118px;height: 32px;border: 1px solid red;left: 0px;top: 0;font-size: 40px;opacity: 0;filter: Alpha(opacity=0);}
+		#addbannarPagePopup .btn{margin: 0px; padding-left: 40px;}
+		#addbannarPagePopup .content h2{margin: 0px 0px 6px 10px;font-size: 24px;}
+		#addbannarPagePopup .btnWrap{background: #e0e4ef;padding: 10px 0px;}
+		#addbannarPagePopup .btnWrap a{font-size: 14px;float: right;margin-right: 20px;border-radius: 3px;}
+		#addbannarPagePopup .btnWrap .return{background: #fff;border: 1px solid #bfbfbf;}
+		#addbannarPagePopup .btnWrap .save{background: #3e83f9;color: #fff;border: 1px solid #1967ba;}
+		#addbannarPagePopup .hideLeft{position: absolute;z-index: 3;left: -2px;top: 50%;margin-top: -11px;background-color: #aaa;height: 30px;width: 22px;cursor: pointer;}
+		#addbannarPagePopup .hideLeft i{display: inline-block;margin: 8px 0 0 6px;border-right: 9px solid #fff;border-top: 6px solid transparent;border-bottom: 6px solid transparent;}
+		#addbannarPagePopup .showLeft i{display: inline-block;margin: 8px 0 0 6px;border-left: 9px solid #fff;border-right: 0px !important;border-top: 6px solid transparent;border-bottom: 6px solid transparent;}
+		#addbannarPagePopup .big{width: 100% !important;}
+		#addbannarPagePopup .big .uploadInner{padding-top: 0px !important;width: 750px; }
+		#addbannarPagePopup .big #previewImg{    height: 240px;
+			width: 450px;}
+		#addbannarPagePopup .big .uploadInner p{float: left;margin-right: 22px;height: 32px;line-height: 32px; }
+		#addbannarPagePopup .big .uploadInner .uploadBtn{margin-right: 22px;}
+		#addbannarPagePopup .changField{
+			width: 1100px;
+			margin-left: -550px;
+			/*background-color: #f9fafc;*/
+		}
+		#addbannarPagePopup .popupWrap {
+			max-height: 360px;
+		}
+		#addbannarPagePopup .previewImg img {
+			width: 100%;
+			height: 100%;
+		}
+		#addbannarPagePopup .previewImg {
+			margin-right: 20px;
+			height: 119px;
+			margin-bottom: 10px;
+		}
+	</style>
+	<div id="addbannarPagePopup"  class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>课程图片上传</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="content clearfix popupWrap">
+				<div class="uploadExplain fl">
+					<h2>课程图片</h2>
+					<img src="images/previewImg6.jpg">
+				</div>
+				<div class="uploadWrap fl">
+					<div class="uploadInner">
+						<div id="previewImg">
+							<img src="images/coursePic3.jpg">
+						</div>
+						<div class="uploadBtn">
+							<div class="btn green uploadImage">
+								<span class="bg"></span>上传图片
+							</div>
+							<input type="file" onchange="previewImage(this)" value="图片上传按钮">
+						</div>
+						<p>500K以内/RGB模式,jpg、gif、png格式</p>
+						<p>建议尺寸：<span class="red">480x270</span></p>
+					</div>
+					<span class="hideLeft"><i></i></span>
+				</div>
+			</div>
+			<div class="btnWrap clearfix">
+				<a href="javascript:void(0);" class="save fr">保存</a>
+				<a href="javascript:void(0);" class="return fr">取消</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        // 小三角按钮
+        $("#addbannarPagePopup").find(".hideLeft").on( "click",function(){
+            $(this).toggleClass("showLeft");
+            $(this).parent().toggleClass("big");
+            $("#addbannarPagePopup").find(".uploadExplain").toggle();
+        } );
+	</script>
+	<!--  -->
+	<style type="text/css">
+		#addlogoPagePopup .changField{
+			width: 600px;
+		}
+		#addlogoPagePopup .filterForm input {
+			overflow: hidden;
+			float: right;
+			width: 120px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 100px;
+			opacity: 0;
+			filter: Alpha(opacity=0);
+			position: absolute;
+			right: 0px;
+		}
+		#addlogoPagePopup  .addVideoForm{
+			padding-left:4px;
+		}
+		#addlogoPagePopup  .addDagangBtn{
+			width: 100%;
+			color:#666;
+			margin-left: -4px;
+			height: 210px;
+			margin-top: 0;
+		}
+		#addlogoPagePopup .filterForm {
+			border-bottom: 0px solid #ddd;
+		}
+		#addlogoPagePopup .uploadForm .statuArea{
+			height: auto
+		}
+		#addlogoPagePopup .addBtn,
+		#addlogoPagePopup .addCourse,
+		#addlogoPagePopup .videoUploadBtn{
+			margin:0px;
+		}
+		#addlogoPagePopup .filterForm {
+			padding: 0 0 10px 0 ;
+		}
+		#addlogoPagePopup .filterForm .type {
+			float: left;
+			margin: 13px 10px 0 0;
+		}
+		#addlogoPagePopup .videoFileTitle{
+			padding-top:10px;
+			line-height: 2rem;
+		}
+		#addlogoPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+		#addlogoPagePopup .gray{
+			display: none;
+		}
+		#addlogoPagePopup .uploadForm{
+			height: auto;
+		}
+	</style>
+	<div id="addlogoPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>新增LOGO</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class=" popupWrap" id="createCourse">
+				<div class="selectCourseWare tabContent createCourseWare " style="display: block;">
+					<!-- 挑选课件类型 S -->
+					<div class="filterForm">
+						<div class="dropList l " style="display: none;">
+							<p class="selected"><span>图片</span><i></i></p>
+							<div class="options" style="display: none;">
+								<p class="imageText">图文</p>
+								<p class="video ">视频</p>
+								<p class="pic current">图片</p>
+								<p class="webPage">网页</p>
+								<p class="doc">文档</p>
+							</div>
+						</div>
+						<span class="btn green r videoUploadBtn" style="display: inline-block;"><i class="icon"></i>上传文件</span>
+						<input type="file" onchange="previewFile(this)" value="图片上传按钮" multiple="" name="files[]">
+						<span class="btn gray r videoUploadBtn"><i class="icon"></i>上传文件</span>
+					</div>
+					<!-- 挑选课件类型 E -->
+					<!--=S 上传图文 -->
+					<div class="uploadForm dn" id="uploadImgText">
+						<!--=S 编辑器位置 -->
+						<div class="editorWrap">
+							<div class="imgWrap">
+								<ul class="clearfix">
+									<li class="htmlCode"></li>
+									<li class="b"></li>
+									<li class="u"></li>
+									<li class="abc"></li>
+									<li class="a"><span>A</span></li>
+									<li class="ab"></li>
+									<li class="eraser"></li>
+									<li class="order"></li>
+									<li class="norder"></li>
+									<li class="fontStyle">
+										<span>微软雅黑</span>
+									</li>
+									<li class="fontSize">
+										<span>12</span>
+										<ul class="clearfix">
+											<li>14</li>
+											<li>16</li>
+											<li>18</li>
+											<li>20</li>
+										</ul>
+									</li>
+									<li class="textLeft"></li>
+									<li class="textCenter"></li>
+									<li class="textRight"></li>
+									<li class="link"></li>
+									<li class="cc"></li>
+									<li class="insertImg"></li>
+								</ul>
+							</div>
+							<textarea></textarea>
+						</div>
+						<!--=E 编辑器位置 -->
+						<p class="beizhu">* 建议图片尺寸不要超过1300*400</p>
+					</div>
+					<!--=E 上传图文 -->
+					<!--=S 上传视频 -->
+					<div class="uploadForm" id="uploadVideo">
+						<div class="statuArea">
+							<!-- 拖拽上传视频 -->
+							<div class="addVideoForm">
+								<div class="addDagangBtn logodrop">
+									<i class="icon"></i>将文件拖拽至此区域
+								</div>
+							</div>
+							<!-- 已选择的视频 -->
+							<div class="willUploadVideo dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>上传中</span>
+									</div>
+									<div class="bar fl">
+										<div class="uploaded"></div>
+									</div>
+									<div class="num fl">
+										<span></span>
+										<span class="cancel"></span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频转码失败 S -->
+							<div class="uploadVideoFail dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>转码失败</span>
+									</div>
+									<div class="bar fl">
+										<div class="uploaded"></div>
+									</div>
+									<div class="num fl">
+										<span>98%</span>
+										<span class="cancel"></span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频转码失败 E -->
+							<div class="success dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>上传成功</span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频上传提示 -->
+							<ul class="videoList uploadState dn">
+								<li>
+									<span class="state uploading"><i class="icon"></i>上传中</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num" style="width:56%;"></i></span>56%</span>
+								</li>
+								<li>
+									<span class="state transform"><i class="icon"></i>转码中</span>
+									<span class="name">角色认知角色认知角色认知角色认知角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+								<li class="error">
+									<span class="state error"><i class="icon"></i>转码失败</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+								<li>
+									<span class="state ok"><i class="icon"></i>转码完成</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--=E 上传视频 -->
+				</div>
+				<div class="videoFileTitle">
+					LOGO名称
+				</div>
+				<div class="videoFileName">
+					<input type="text" class="text" name="" placeholder="请输入LOGO名称">
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="popupBtn blue fr J-close">确定</a>
+				<a href="javascript:void(0);" class="popupBtn fr J-close">返回</a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<style type="text/css">
+		#addhtmlPagePopup .changField{
+			width: 600px;
+		}
+		#addhtmlPagePopup .filterForm input {
+			overflow: hidden;
+			float: right;
+			width: 120px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 100px;
+			opacity: 0;
+			filter: Alpha(opacity=0);
+			position: absolute;
+			right: 35px;
+		}
+		#addhtmlPagePopup  .addVideoForm{
+			padding-left:4px;
+		}
+		#addhtmlPagePopup  .addDagangBtn{
+			width: 100%;
+			color:#666;
+			margin-left: -4px;
+			height: 210px;
+			margin-top: 0;
+		}
+		#addhtmlPagePopup .filterForm {
+			border-bottom: 0px solid #ddd;
+		}
+		#addhtmlPagePopup .uploadForm .statuArea{
+			height: auto
+		}
+		#addhtmlPagePopup .addBtn,
+		#addhtmlPagePopup .addCourse,
+		#addhtmlPagePopup .videoUploadBtn{
+			margin:0px;
+		}
+		#addhtmlPagePopup .filterForm {
+			padding: 0 0 10px 0 ;
+		}
+		#addhtmlPagePopup .filterForm .type {
+			float: left;
+			margin: 13px 10px 0 0;
+		}
+		#addhtmlPagePopup .videoFileTitle{
+			padding-top:10px;
+			line-height: 2rem;
+		}
+		#addhtmlPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+		#addhtmlPagePopup .gray{
+			display: none;
+		}
+		#addhtmlPagePopup .uploadForm{
+			height: auto;
+		}
+	</style>
+	<div id="addhtmlPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>本地导入</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class=" popupWrap" id="createCourse">
+				<div class="selectCourseWare tabContent createCourseWare " style="display: block;">
+					<!-- 挑选课件类型 S -->
+					<div class="filterForm">
+						<div class="dropList l " style="display: none;">
+							<p class="selected"><span>文档</span><i></i></p>
+							<div class="options" style="display: none;">
+								<p class="imageText">图文</p>
+								<p class="video ">视频</p>
+								<p class="pic">图片</p>
+								<p class="webPage">网页</p>
+								<p class="doc current">文档</p>
+							</div>
+						</div>
+						<span class="btn green r videoUploadBtn" style="display: inline-block;"><i class="icon"></i>上传文件</span>
+						<input type="file" onchange="previewFile(this)" value="图片上传按钮" multiple="" name="files[]">
+						<span class="btn gray r videoUploadBtn"><i class="icon"></i>上传文件</span>
+					</div>
+					<!-- 挑选课件类型 E -->
+					<!--=S 上传图文 -->
+					<div class="uploadForm dn" id="uploadImgText">
+						<!--=S 编辑器位置 -->
+						<div class="editorWrap">
+							<div class="imgWrap">
+								<ul class="clearfix">
+									<li class="htmlCode"></li>
+									<li class="b"></li>
+									<li class="u"></li>
+									<li class="abc"></li>
+									<li class="a"><span>A</span></li>
+									<li class="ab"></li>
+									<li class="eraser"></li>
+									<li class="order"></li>
+									<li class="norder"></li>
+									<li class="fontStyle">
+										<span>微软雅黑</span>
+									</li>
+									<li class="fontSize">
+										<span>12</span>
+										<ul class="clearfix">
+											<li>14</li>
+											<li>16</li>
+											<li>18</li>
+											<li>20</li>
+										</ul>
+									</li>
+									<li class="textLeft"></li>
+									<li class="textCenter"></li>
+									<li class="textRight"></li>
+									<li class="link"></li>
+									<li class="cc"></li>
+									<li class="insertImg"></li>
+								</ul>
+							</div>
+							<textarea></textarea>
+						</div>
+						<!--=E 编辑器位置 -->
+						<p class="beizhu">* 建议图片尺寸不要超过1300*400</p>
+					</div>
+					<!--=E 上传图文 -->
+					<!--=S 上传视频 -->
+					<div class="uploadForm" id="uploadVideo">
+						<div class="statuArea">
+							<!-- 拖拽上传视频 -->
+							<div class="addVideoForm">
+								<div class="addDagangBtn">
+									<i class="icon"></i>将文件拖拽至此区域
+								</div>
+							</div>
+							<!-- 已选择的视频 -->
+							<div class="willUploadVideo dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>上传中</span>
+									</div>
+									<div class="bar fl">
+										<div class="uploaded"></div>
+									</div>
+									<div class="num fl">
+										<span></span>
+										<span class="cancel"></span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频转码失败 S -->
+							<div class="uploadVideoFail dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>转码失败</span>
+									</div>
+									<div class="bar fl">
+										<div class="uploaded"></div>
+									</div>
+									<div class="num fl">
+										<span>98%</span>
+										<span class="cancel"></span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频转码失败 E -->
+							<div class="success dn">
+								<img src="images/video.png">
+								<p>dfa.mp4</p>
+								<div class="statu clearfix">
+									<div class="text fl">
+										<span class="bg"></span>
+										<span>上传成功</span>
+									</div>
+								</div>
+							</div>
+							<!-- 视频上传提示 -->
+							<ul class="videoList uploadState dn">
+								<li>
+									<span class="state uploading"><i class="icon"></i>上传中</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num" style="width:56%;"></i></span>56%</span>
+								</li>
+								<li>
+									<span class="state transform"><i class="icon"></i>转码中</span>
+									<span class="name">角色认知角色认知角色认知角色认知角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+								<li class="error">
+									<span class="state error"><i class="icon"></i>转码失败</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+								<li>
+									<span class="state ok"><i class="icon"></i>转码完成</span>
+									<span class="name">角色认知.mp4</span>
+									<i class="delBtn" title="删除"></i>
+									<span class="progressWrap"><span class="progress"><i class="num"></i></span>100%</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--=E 上传视频 -->
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="popupBtn blue fr J-close">确定</a>
+				<a href="javascript:void(0);" class="popupBtn fr J-close">返回</a>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+		/*#addclasspicPagePopup{display: none; margin-top: -333px; top:50%;overflow: hidden; position: absolute;width: 1080px;left: 50%;margin-left: -540px;border-radius: 5px;}*/
+		#addclasspicPagePopup .content{background: #fff;}
+		#addclasspicPagePopup .content .uploadExplain,
+		#addclasspicPagePopup .content .uploadWrap{width: 50%;}
+		#addclasspicPagePopup .content .uploadExplain{padding-top: 26px;height: 331px;overflow-y: auto;}
+		#addclasspicPagePopup .content .uploadWrap{position: relative;height:300px;}
+		#addclasspicPagePopup .content .uploadWrap .uploadInner{margin-left: 36px;padding-top: 20px;}
+		#addclasspicPagePopup .uploadBtn{position: relative;}
+		#addclasspicPagePopup .uploadBtn .bg{left: 16px; top: 10px; position: absolute;width: 18px;height: 16px; background: url(../images/upload.png);}
+		#addclasspicPagePopup .uploadBtn input{position: absolute;width: 100px;height: 32px;border: 1px solid red;left: 0px;top: 0;font-size: 40px;opacity: 0;filter: Alpha(opacity=0);}
+		#addclasspicPagePopup .btn{margin: 0px; padding-left: 40px;}
+		#addclasspicPagePopup .content h2{margin: 0px 0px 6px 10px;font-size: 24px;}
+		#addclasspicPagePopup .btnWrap{background: #e0e4ef;padding: 10px 0px;}
+		#addclasspicPagePopup .btnWrap a{font-size: 14px;float: right;margin-right: 20px;border-radius: 3px;}
+		#addclasspicPagePopup .btnWrap .return{background: #fff;border: 1px solid #bfbfbf;}
+		#addclasspicPagePopup .btnWrap .save{background: #3e83f9;color: #fff;border: 1px solid #1967ba;}
+		#addclasspicPagePopup .hideLeft{position: absolute;z-index: 3;left: -2px;top: 50%;margin-top: -11px;background-color: #aaa;height: 30px;width: 22px;cursor: pointer;}
+		#addclasspicPagePopup .hideLeft i{display: inline-block;margin: 8px 0 0 6px;border-right: 9px solid #fff;border-top: 6px solid transparent;border-bottom: 6px solid transparent;}
+		#addclasspicPagePopup .showLeft i{display: inline-block;margin: 8px 0 0 6px;border-left: 9px solid #fff;border-right: 0px !important;border-top: 6px solid transparent;border-bottom: 6px solid transparent;}
+		#addclasspicPagePopup .big{width: 100% !important;}
+		#addclasspicPagePopup .big .uploadInner{padding-top: 0px !important;width: 750px; }
+		#addclasspicPagePopup .big #previewImg{    height: 240px;
+			width: 450px;}
+		#previewkcImage{margin-right: 20px;height: 270px;margin-bottom: 10px;}
+		#previewkcImage img{width: 100%;max-height:270px;}
+		#addclasspicPagePopup .big .uploadInner p{float: left;margin-right: 22px;height: 32px;line-height: 32px; }
+		#addclasspicPagePopup .big .uploadInner .uploadBtn{margin-right: 22px;}
+		#addclasspicPagePopup .changField{
+			width: 1100px;
+			margin-left: -550px;
+			/*background-color: #f9fafc;*/
+		}
+		#addclasspicPagePopup .popupWrap {
+			max-height: 360px;
+		}
+	</style>
+	<div id="addclasspicPagePopup"  class="pagePopup" >
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>课程图片上传</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="content clearfix popupWrap">
+				<div class="uploadExplain fl">
+					<h2>课程图片</h2>
+					<img src="images/coursePic.jpg">
+				</div>
+				<div class="uploadWrap fl">
+					<div class="uploadInner">
+						<div id="previewkcImage">
+							<img src="images/coursePic3.jpg">
+						</div>
+						<div class="uploadBtn">
+							<div class="btn green uploadImage">
+								<span class="bg"></span>上传图片
+							</div>
+							<input type="file" onchange="previewkcImage(this)" value="图片上传按钮">
+						</div>
+						<p>500K以内/RGB模式,jpg、gif、png格式</p>
+						<p>建议尺寸：<span class="red">480x270</span></p>
+					</div>
+					<span class="hideLeft"><i></i></span>
+				</div>
+			</div>
+			<div class="btnWrap clearfix">
+				<a href="javascript:void(0);" class="save fr">保存</a>
+				<a href="javascript:void(0);" class="return fr">取消</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        // 小三角按钮
+        $("#addclasspicPagePopup").find(".hideLeft").on( "click",function(){
+            $(this).toggleClass("showLeft");
+            $(this).parent().toggleClass("big");
+            $("#addclasspicPagePopup").find(".uploadExplain").toggle();
+        } );
+	</script>
+	<!--  -->
+	<style type="text/css">
+		#editbannarPagePopup .videoFile>div{
+			margin:0 auto;
+			text-align: center;
+			color:#666;
+		}
+		#editbannarPagePopup .videoFileTitle{
+			line-height: 2rem;
+		}
+		#editbannarPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+		#editbannarPagePopup .changField{
+			width: 600px;
+			margin-left: -300px;
+			/*background-color: #f9fafc;*/
+		}
+	</style>
+	<div id="editbannarPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>编辑</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="popupWrap">
+				<div class="videoFile">
+					<div >
+						<p><img src="./images/defaultBanner.jpg"></p>
+					</div>
+				</div>
+				<div class="videoFileTitle">
+					图片名称
+				</div>
+				<div class="videoFileName">
+					<input type="text" class="text" name="" value="风景摄影案例欣赏.jpg">
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="save popupBtn blue fr J-close">保存</a>
+				<a href="javascript:void(0);" class="return popupBtn fr J-close">取消</a>
+				<a href="download.mp4" download="mp3" class="download popupBtn fr J-close">下载图片</a>
+			</div>
+		</div>
+	</div>
+<!--  -->
+	<style type="text/css">
+		#editzmhbannarPagePopup .videoFile>div{
+			margin:0 auto;
+			text-align: center;
+			color:#666;
+		}
+		#editzmhbannarPagePopup .videoFileTitle{
+			line-height: 2rem;
+		}
+		#editzmhbannarPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+		#editzmhbannarPagePopup .changField{
+			width: 600px;
+			margin-left: -300px;
+			/*background-color: #f9fafc;*/
+		}
+	</style>
+	<div id="editzmhbannarPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>编辑</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="popupWrap">
+				<div class="videoFile">
+					<div >
+						<p><img src="./images/defaultBanner.jpg"></p>
+					</div>
+				</div>
+				<div class="videoFileTitle">
+					图片名称
+				</div>
+				<div class="videoFileName">
+					<input type="text" class="text" name="" value="风景摄影案例欣赏.jpg">
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="save popupBtn blue fr J-close">保存</a>
+				<a href="javascript:void(0);" class="return popupBtn fr J-close">取消</a>
+				<a href="download.mp4" download="mp3" class="download popupBtn fr J-close">下载图片</a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<style type="text/css">
+		#editPicPagePopup .videoFile{
+			border: 1px solid #ddd;
+			background-color: #f9fafc;
+			padding: 50px 0;
+		}
+		#editPicPagePopup .videoFile>div{
+			margin:0 auto;
+			text-align: center;
+			width: 90%;
+			color:#666;
+		}
+		#editPicPagePopup .videoFileTitle{
+			line-height: 2rem;
+		}
+		#editPicPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+	</style>
+	<div id="editPicPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>编辑</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="popupWrap">
+				<div class="videoFile">
+					<div >
+						<p><img src="./images/zimenhuLogo1.png"></p>
+						<p class="logo_name">zimenhuLogo1.png</p>
+					</div>
+				</div>
+				<div class="videoFileTitle">
+					logo名称
+				</div>
+				<div class="videoFileName">
+					<input type="text" class="text" name="" value="zimenhuLogo1.png">
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="save popupBtn blue fr J-close">保存</a>
+				<a href="javascript:void(0);" class="return popupBtn fr J-close">取消</a>
+				<a href="download.mp4" download="mp3" class="download popupBtn fr J-close">下载logo</a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<style type="text/css">
+		#editclasspicPagePopup .videoFile>div{
+			margin:0 auto;
+			text-align: center;
+			color:#666;
+		}
+		#editclasspicPagePopup .videoFileTitle{
+			line-height: 2rem;
+		}
+		#editclasspicPagePopup .text{
+			width: 100%;
+			color:#666;
+		}
+		#editclasspicPagePopup .videoFile img{
+			width: 100%;
+		}
+	</style>
+	<div id="editclasspicPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>编辑</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="popupWrap">
+				<div class="videoFile">
+					<div >
+						<p><img src="./images/courseImg.jpg"></p>
+					</div>
+				</div>
+				<div class="videoFileTitle">
+					图片名称
+				</div>
+				<div class="videoFileName">
+					<input type="text" class="text" name="" value="风景摄影案例欣赏.jpg">
+				</div>
+			</div>
+			<div class="popupBtnWrap">
+				<a href="javascript:void(0);" class="save popupBtn blue fr J-close">保存</a>
+				<a href="javascript:void(0);" class="return popupBtn fr J-close">取消</a>
+				<a href="download.mp4" download="mp3" class="download popupBtn fr J-close">下载图片</a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="previewPagePopup" class="pagePopup">
+		<div class="mask"></div>
+		<div class="changField">
+			<div class="header">
+				<span>更改域设置</span>
+				<span class="closePopup J-close"></span>
+			</div>
+			<div class="tree popupWrap">
+				<ul class="menuWrap">
+					<li class="mainMenu">
+						<div class="desc">
+							<span class="triangle"></span>
+							<span class="radio"></span>
+							<span class="text">华为大学</span>
+						</div>
+						<ul class="subMenu">
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学eee</span>
+								</div>
+								<span class="bg fl"></span>
+								<ul class="subMenu">
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学eee</span>
+										</div>
+										<span class="bg fl"></span>
+										<ul class="subMenu">
+											<li>
+												<div class="desc">
+													<span class="triangle"></span>
+													<span class="radio"></span>
+													<span class="text">华为大学</span>
+												</div>
+												<span class="bg fl"></span>
+											</li>
+											<li>
+												<div class="desc">
+													<span class="triangle"></span>
+													<span class="radio"></span>
+													<span class="text">华为大学</span>
+												</div>
+												<span class="bg fl"></span>
+											</li>
+											<li>
+												<div class="desc">
+													<span class="triangle"></span>
+													<span class="radio"></span>
+													<span class="text">华为大学</span>
+												</div>
+												<span class="bg fl"></span>
+											</li>
+											<li>
+												<div class="desc">
+													<span class="triangle" style="display: none;"></span>
+													<span class="radio"></span>
+													<span class="text">华为大学</span>
+												</div>
+												<span class="bg fl" style="background-position: -62px -54px;"></span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl" style="background-position: -62px -54px;"></span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl" style="background-position: -62px -54px;"></span>
+								<ul class="subMenu">
+									<li>
+										<div class="desc">
+											<span class="triangle" style="display: none;"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle" style="display: none;"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle" style="display: none;"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle" style="display: none;"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl" style="background-position: -62px -54px;"></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<div class="desc">
+							<span class="triangle"></span>
+							<span class="radio"></span>
+							<span class="text">产品与解决方案</span>
+						</div>
+						<ul class="subMenu">
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl" style="background-position: -62px -54px;"></span>
+								<ul class="subMenu">
+									<li>
+										<div class="desc">
+											<span class="triangle" style="display: none;"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl"></span>
+									</li>
+									<li>
+										<div class="desc">
+											<span class="triangle"></span>
+											<span class="radio"></span>
+											<span class="text">华为大学</span>
+										</div>
+										<span class="bg fl" style="background-position: -62px -54px;"></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<div class="desc">
+							<span class="triangle"></span>
+							<span class="radio"></span>
+							<span class="text">消费者bg</span>
+						</div>
+						<ul class="subMenu">
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl" style="background-position: -62px -54px;"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<div class="desc">
+							<span class="triangle"></span>
+							<span class="radio"></span>
+							<span class="text">项目管理资源池</span>
+						</div>
+						<ul class="subMenu">
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl"></span>
+							</li>
+							<li>
+								<div class="desc">
+									<span class="triangle"></span>
+									<span class="radio"></span>
+									<span class="text">华为大学</span>
+								</div>
+								<span class="bg fl" style="background-position: -62px -54px;"></span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="btnWrap">
+				<a href="javascript:void(0);" class="save fr J-close">保存</a>
+				<a href="javascript:void(0);" class="return fr J-close">取消</a>
+			</div>
+		</div>
+	</div>
+	<script>
+        // 树形结构 S
+        (function(){
+            var $tree = $("#previewPagePopup").find(".tree")
+            var liDom =$tree.find("li");
+            if( liDom.find("ul").hasClass("subMenu") ){
+                var bgDom =$tree.find( ".bg" );
+                for( var i = 0;i < bgDom.length; i++ ){
+                    var last = bgDom.eq(i).parent().parent().children().length-1;
+                    // 改变样式
+                    if( bgDom.eq(i).parent().parent().hasClass("subMenu") && ( bgDom.eq(i).parent().index() == last ) ){
+                        bgDom.eq(i).css( { "backgroundPosition":"-62px -54px"  } );
+                        bgDom.eq(i).parent().css( "backgroundImage","none" );
+                    }
+                }
+            }
+            // 没有子菜单的隐藏三角图标
+            for( var i = 0; i<liDom.length;i++ ){
+                if( !( liDom.eq(i).find("ul").hasClass("subMenu")) ){
+                    liDom.eq(i).find(".triangle").css( "display","none" );
+                }
+            }
+            // 点击三角图标收缩展开子菜单
+            $tree.find(".triangle").on( "click",function(){
+                $(this).toggleClass( "active" );
+                if( $(this).hasClass("active") ){
+                    $(this).parent().siblings("ul").slideDown();
+                }else{
+                    $(this).parent().siblings("ul").slideUp();
+                }
+            } );
+            // 单选操作
+            $tree.find(".radio").on( "click",function(){
+                $tree.find(".radio").removeClass("active");
+                $(this).toggleClass( "active" );
+                // 有子菜单的情况下
+                if( $(this).parent().siblings().find("span").hasClass("radio") ){
+                    $(this).removeClass("active");
+                    if( $(this).hasClass("active") ){
+                        $(this).parent().siblings().find(".radio").addClass("active");
+                    }else{
+                        $(this).parent().siblings().find(".radio").removeClass("active");
+                    }
+                }
+            } );
+        })();
+        // 树形结构 E
+	</script>
+<script>
+	// 拖拽上传
+  // 拖拽上传
+	 $(function() {
+      //必须将jq对象转换为js对象，调用原生方法
+      var oDiv = $(".logodrop").get(0);
+      var oP = $(".logodrop");
+      //进入
+      oDiv.ondragenter = function() {
+          oP.html('');
+        }
+        //移动，需要阻止默认行为，否则直接在本页面中显示文件
+      oDiv.ondragover = function(e) {
+          e.preventDefault();
+        }
+        //离开
+      oDiv.onleave = function() {
+          oP.html('请将图片文件拖拽至此区域！');
+        }
+        //拖拽放置，也需要阻止默认行为
+      oDiv.ondrop = function(e) {
+        e.preventDefault();
+        //获取拖拽过来的对象,文件对象集合
+        var fs = e.dataTransfer.files;
+        //若为表单域中的file标签选中的文件，则使用form[表单name].files[0]来获取文件对象集合
+        //打印长度
+        console.log(fs.length);
+        //循环多文件拖拽上传
+        for (var i = 0; i < fs.length; i++) {
+          //文件类型
+          var _type = fs[i].type;
+		  var filename = fs[i].name;
+          console.log(_type);
+          console.log(filename);
+          //判断文件类型
+          if (_type.indexOf('image') != -1) {
+            //文件大小控制
+            console.log(fs[i].size);
+            //读取文件对象
+            var reader = new FileReader();
+            //读为DataUrl,无返回值
+            reader.readAsDataURL(fs[i]);
+            reader.onloadstart = function(e) {
+                //开始加载
+              }
+              // 这个事件在读取进行中定时触发
+            reader.onprogress = function(e) {
+             // $("#total").html(e.total);
+              
+            }
+            //当读取成功时触发，this.result为读取的文件数据
+            reader.onload = function() {
+                //文件数据
+                // console.log(this.result);
+                //添加文件预览
+                var oImg = $("<img style='width:100%;' src='' />");
+                oImg.attr("src", this.result);
+                $(oDiv).append(oImg); //oDiv转换为js对象调用方法
+				$("#addlogoPagePopup .videoFileName input").val(filename);
+					var num = 0;
+				 	$("#createCourse").find(".filterForm").find(".green").css( "display","none" );
+				    	$("#createCourse").find(".filterForm").find("input").addClass("dn");
+				    	$("#createCourse").find(".filterForm").find(".gray").css( "display","block" );
+						$("#uploadVideo").find(".addVideoForm").addClass("dn");
+						$("#uploadVideo").find(".willUploadVideo").find("p").text( filename );
+						
+						var timer = setInterval( function(){
+							num++;
+							if( num == 100 ){
+								clearInterval(timer);
+								$("#uploadVideo").find(".willUploadVideo").find(".text").find('span').eq(1).text( "转码中" );
+								transCoding( filename );
+							}
+							$("#uploadVideo").find(".willUploadVideo").find(".uploaded").css( "width", num + "%" );
+							$("#uploadVideo").find(".willUploadVideo").find(".num ").find("span").eq(0).text( num+"%" );
+						},50 );
+						$("#uploadVideo").find(".willUploadVideo").removeClass("dn");
+                
+              }
+              //无论成功与否都会触发
+            reader.onloadend = function() {
+              if (reader.error) {
+                console.log(reader.error);
+              } else {
+                //上传没有错误，ajax发送文件，上传二进制文件
+              }
+            }
+          } else {
+            alert('请上传图片文件！');
+          }
+        }
+ 
+      }
+    });
+	//拖拽上传 end
+</script>
+</body>
+</html>

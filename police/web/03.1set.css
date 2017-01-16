@@ -1,0 +1,22 @@
+.ls-container ul{
+	margin: 0 auto;
+	margin-top:20rem;
+	text-align: center;
+}
+.ls-container ul li{
+	width: 8.125rem;
+	margin:0 1%;
+	margin:10px;
+	text-align: center;
+	display:inline-block;
+	/*float:left;*/
+}
+.ls-container ul li p{
+	margin-top: 1rem;
+}
+.ls-container .layui-circle{
+	width: 8.125rem;
+	line-height: 8.125rem;
+	height: 8.125rem;
+	font-size: 2rem;
+}

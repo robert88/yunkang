@@ -1,0 +1,6 @@
+@import url(/web/redForm.css);
+@import url(/web/redTable.css);
+.searchList .layui-form-label{
+    width:90px;
+    padding: 9px 10px;
+}

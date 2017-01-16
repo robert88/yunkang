@@ -1,0 +1,18 @@
+@import url(/web/blueForm.css);
+@import url(/web/blueTable.css);
+
+.layui-form-item .layui-input-inline {
+    width: 217px;
+    margin-right: 10px;
+}
+.midde-gray .layui-input-block {
+    margin-left: 146px;
+}
+
+midde-gray .layui-form-label {
+    width: 115px;
+}
+.subBtn-wrap2{
+    text-align: center;
+    padding: 1.5rem 0 0 0 ;
+}

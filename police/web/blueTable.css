@@ -1,0 +1,40 @@
+.ls-container .layui-table thead tr {
+    background-color: #0aa5ff;
+    color:#fff;
+}
+
+.layui-table th{
+    font-weight: 400;
+}
+.layui-table tfoot,.layui-table tfoot td{
+  border-bottom: none;
+}
+
+.pageFooter-wrap{
+    position:relative;
+}
+#pageFooter{
+    position: absolute;
+    left:0;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+}
+.layui-laypage span, .layui-laypage a{
+    margin: 0 0 0 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.layui-laypage {
+    margin:  0;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #0aa5ff;
+}
+.layui-laypage-total-num{
+    color:#6cc9fe;
+    margin:0 5px;
+}
+.layui-table .btn-wrap{
+    width:100px;
+}

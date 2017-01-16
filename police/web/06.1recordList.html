@@ -1,0 +1,144 @@
+<div class='ls-container'>
+
+    <!--s:人员列表-->
+    <div class=" peopleList">
+        <form class="layui-form layui-form-pane1" action="">
+            <div class="layui-form-item searchList mt20">
+                <div class="layui-inline">
+                    <label class="layui-form-label">关键字</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">案件类型</label>
+                    <div class="layui-input-block">
+                        <select name="quiz">
+                            <option value="">全部</option>
+                            <option value="你工作的第一个城市">你工作的第一个城市</option>
+                            <option value="你的工号" disabled="">你的工号</option>
+                            <option value="你最喜欢的老师">你最喜欢的老师</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">按地市</label>
+                    <div class="layui-input-block">
+                        <select name="quiz">
+                            <option value="">全部</option>
+                            <option value="你工作的第一个城市">你工作的第一个城市</option>
+                            <option value="你的工号" disabled="">你的工号</option>
+                            <option value="你最喜欢的老师">你最喜欢的老师</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">按分局</label>
+                    <div class="layui-input-block">
+                        <select name="quiz">
+                            <option value="">全部</option>
+                            <option value="你工作的第一个城市">你工作的第一个城市</option>
+                            <option value="你的工号" disabled="">你的工号</option>
+                            <option value="你最喜欢的老师">你最喜欢的老师</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">按状态</label>
+                    <div class="layui-input-block">
+                        <select name="quiz">
+                            <option value="">全部</option>
+                            <option value="你工作的第一个城市">你工作的第一个城市</option>
+                            <option value="你的工号" disabled="">你的工号</option>
+                            <option value="你最喜欢的老师">你最喜欢的老师</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <a class="layui-btn layui-btn-opa mr30">筛选</a>
+                    <a class="layui-btn layui-btn-opa-icon"><span class="color-icon-save"></span>导出</a>
+                </div>
+            </div>
+            <table class="layui-table" ay-even>
+                <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" class="layui-select-all">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked " data-target=""><i
+                                class="layui-icon"></i></div>
+                    </th>
+                    <th>编号</th>
+                    <th>接警人</th>
+                    <th>接警时间</th>
+                    <th>接警方式</th>
+                    <th>所属地市</th>
+                    <th>所属分局</th>
+                    <th>案件类型</th>
+                    <th>出警时间</th>
+                    <th>处警人</th>
+                    <th>出警结果</th>
+                    <th>案件状态</th>
+                    <th>备注</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i class="layui-icon"></i>
+                        </div>
+                    </td>
+                    <td>1</td>
+                    <td>王国强</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>群众报警</td>
+                    <td>太原市</td>
+                    <td>迎泽分局</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>受理中</td>
+                    <td>-</td>
+                    <td>
+                        <div class="btn-wrap">
+                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
+                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="20">
+                        <div class="layui-form no-border  pageFooter-wrap">
+                            <div class="layui-inline" style="z-index: 1">
+                                <input type="checkbox" class="layui-select-all">
+                                <div class="layui-unselect layui-form-checkbox layui-form-checked"><i class="layui-icon"></i></div>
+                                <span class="mr30">全选</span>
+                                <a class="layui-btn layui-btn-opa  delSelectItem">删除所选</a>
+                                <a class="layui-btn layui-btn-opa  ">查询记录</a>
+                                <a class="layui-btn layui-btn-opa  ">导出记录</a>
+                            </div>
+
+                            <div id="pageFooter"></div>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+
+            </table>
+        </form>
+    </div>
+    <!--e:人员列表-->
+
+
+</div>

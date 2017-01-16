@@ -1,0 +1,77 @@
+.ls-container .top-group{
+	margin:3.75rem 0;
+	/*border:1px solid #c1c1c1;*/
+}
+.ls-container .top-group:after{
+	content: " ";
+	clear: both;
+	display: block;
+}
+.ls-container .top-group li{
+	float:left;
+	width:33.33%;
+	position:relative;
+}
+.ls-container .top-group li:after{
+	content: " ";
+	position: absolute;
+	left:0;
+	right: 30px;
+	top:0;
+	bottom: 0;
+	border:1px solid #c1c1c1;
+}
+.ls-container .top-group .title{
+	position:relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 30.769%;
+	padding-top:30.769%;
+}
+.ls-container .top-group .title>i{
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 3rem;
+	margin-left:-1.5rem;
+	margin-top:-1.5rem;
+}
+.ls-container .top-group .info{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:4%;
+}
+.ls-container .top-group .text{
+	line-height: 1.5rem;
+}
+.ls-container .top-group .num{
+	font-size: 2rem;
+	color:#333
+}
+.ls-container .top-group .text>i{
+	color:#333;
+}
+.ls-container h3{
+	font-size: 1.5rem;
+}
+/*.layui-tab{*/
+/**/
+/*}*/
+.ls-container .lastly .layui-tab-brief > .layui-tab-title .layui-this {
+	color: #4085c8;
+}
+.ls-container .lastly .layui-tab-brief > .layui-tab-title .layui-this:after,
+.ls-container .lastly .layui-tab-brief > .layui-tab-more li.layui-this:after {
+	border-bottom: 3px solid #4085c8;
+}
+.ls-container .lastly .layui-tab-title {
+	border-bottom:none;
+}
+.ls-container .lastly .layui-tab-content{
+	/*border:1px solid red;*/
+	height:26rem;
+}
+.ls-container .lastly .layui-tab-content .layui-tab-item{
+	height: 100%;
+	width: 100%;
+}

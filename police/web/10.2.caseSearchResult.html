@@ -1,0 +1,66 @@
+<div class='ls-container'>
+
+    <div class="turnback">
+        <a onclick="history.back(-1)" class="layui-btn layui-btn-primary">返回</a>
+    </div>
+
+    <!--s:受案不规范-->
+    <form class="layui-form layui-form-pane1" action="">
+
+        <div class="layui-form-item searchResultInfo mt20">
+            <span class="text">查询结果</span>
+            共查到
+            <span class="num">12</span>
+            条记录
+
+            <a class="layui-btn layui-btn-opa-icon rightBtn"><span class="color-icon-save"></span>导出</a>
+        </div>
+
+        <div class="layui-table">
+            <table class="layui-form " lay-even>
+                <thead>
+                <tr>
+                    <th>受立案编号</th>
+                    <th>接警人</th>
+                    <th>接警时间</th>
+                    <th>接警方式</th>
+                    <th>所属地市</th>
+                    <th>所属分局</th>
+                    <th>案件类型</th>
+                    <th>受立案时间</th>
+                    <th>处警人</th>
+                    <th>出警结果</th>
+                    <th>受立状态</th>
+                    <th>材料文件</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>王国强</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>群众报警</td>
+                    <td>太原市</td>
+                    <td>迎泽分局</td>
+                    <td>治安行政</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>王国强</td>
+                    <td>报立治安、行政案件</td>
+                    <td>受理中</td>
+                    <td>齐全</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="layui-form no-border  pageFooter-wrap">
+                <div class="layui-inline" style="z-index: 1;margin-left: 10px">
+                    <!--<a class="layui-btn layui-btn-opa  ">查询记录</a>-->
+                    <a class="layui-btn layui-btn-opa  ">导出记录</a>
+                </div>
+
+                <div id="pageFooter"></div>
+            </div>
+        </div>
+    </form>
+    <!--e:受案不规范-->
+
+</div>

@@ -1,0 +1,163 @@
+<div class='ls-container'>
+
+    <!--s:接警登记表-->
+    <form class="layui-form layui-form-pane1" action="">
+        <div class="layui-form-item layui-form-title">
+            <h3>接警登记表</h3>
+            <p>ALARM REGISTRATION FORM</p>
+        </div>
+        <div class="layui-form-item layui-form-item-wrap">
+            <label class="layui-form-label" style="margin-left:144px">编号：</label>
+            <div class="layui-input-inline ">
+                <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+
+
+        <div class=" midde-gray">
+            <div class="layui-form-item-wrap">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">所属地市：</label>
+                        <div class="layui-inline">
+                            <select name="quiz">
+                                <option value="">请选择</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">所属分局：</label>
+                        <div class="layui-inline">
+                            <select name="quiz">
+                                <option value="">请选择</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item ">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">接警时间：</label>
+                        <div class="layui-input-inline " style="width: 100px">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                        <span class="layui-form-mid">年</span>
+                        <div class="layui-input-inline " style="width: 65px">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                        <span class="layui-form-mid">月</span>
+                        <div class="layui-input-inline " style="width: 65px">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                        <span class="layui-form-mid">日</span>
+                        <div class="layui-input-inline " style="width: 65px">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                        <span class="layui-form-mid">时</span>
+                        <div class="layui-input-inline " style="width: 65px">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                        <span class="layui-form-mid">分</span>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">接警方式：</label>
+                        <div class="layui-input-block ">
+                            <input type="radio" name="method" value="指挥中心指令" title="指挥中心指令" checked="">
+                            <div class="layui-unselect layui-form-radio layui-form-radioed"><i
+                                    class="layui-anim layui-icon"></i><span>指挥中心指令</span></div>
+                            <input type="radio" name="method" value="领导指令" title="领导指令">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>领导指令</span>
+                            </div>
+                            <input type="radio" name="method" value="群众报警" title="群众报警">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>群众报警</span>
+                            </div>
+                            <input type="radio" name="method" value="部门报警" title="部门报警">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>部门报警</span>
+                            </div>
+                            <input type="radio" name="method" value="群众扭送" title="群众扭送">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>群众扭送</span>
+                            </div>
+                            <input type="radio" name="method" value="执勤巡逻发现" title="执勤巡逻发现">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>执勤巡逻发现</span>
+                            </div>
+                            <input type="radio" name="method" value="投案自首" title="投案自首">
+                            <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>投案自首</span>
+                            </div>
+                            <input type="radio" name="method" value="其他" title="其他">
+                            <div class="layui-unselect layui-form-radio"><i
+                                    class="layui-anim layui-icon"></i><span>其他</span></div>
+                            <div class="layui-input-inline " style="float: none;">
+                                <input type="text" name="title" lay-verify="title" required="" placeholder=""
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">报警人姓名：</label>
+                    <div class="layui-input-inline " style="width: 100px">
+                        <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                    <label class="layui-form-label" style="width: 50px;">性别：</label>
+                    <div class="layui-input-inline " style="width: 120px">
+                        <input type="radio" name="sex" value="男" title="男">
+                        <div class="layui-unselect layui-form-radio"><i
+                                class="layui-anim layui-icon"></i><span>男</span></div>
+                        <input type="radio" name="sex" value="女" title="女" checked="">
+                        <div class="layui-unselect layui-form-radio layui-form-radioed"><i
+                                class="layui-anim layui-icon"></i><span>女</span></div>
+                    </div>
+                    <label class="layui-form-label" style="width: 70px;">联系方式：</label>
+                    <div class="layui-input-inline " style="width: 220px;margin-right: 0px;">
+                        <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">工作单位或住址：</label>
+                    <div class="layui-input-block ">
+                        <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">警情现场地址：</label>
+                    <div class="layui-input-block ">
+                        <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">接警情况：</label>
+                    <div class="layui-input-block ">
+                        <textarea placeholder="" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block subBtn-wrap2">
+                <button class="layui-btn subBtn" lay-submit="" lay-filter="*">提交</button>
+            </div>
+        </div>
+    </form>
+    <!--e:接警登记表-->
+
+</div>

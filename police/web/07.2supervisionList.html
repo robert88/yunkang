@@ -1,0 +1,106 @@
+<div class='ls-container'>
+
+    <div class="turnback">
+        <a onclick="history.back(-1)" class="layui-btn layui-btn-primary">返回</a>
+    </div>
+
+    <!--s:受案不规范-->
+    <form class="layui-form layui-form-pane1" action="">
+
+
+        <div class="layui-form-item  layui-form-title">
+            <h3>受案不规范</h3>
+        </div>
+
+        <div class="layui-form-item searchList">
+            <div class="layui-inline">
+                <label class="layui-form-label">关键字</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+
+
+            <div class="layui-inline">
+                <label class="layui-form-label">案件类型</label>
+                <div class="layui-input-block">
+                    <select name="quiz">
+                        <option value="">全部</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">案件类型</label>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input1" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+                <span class="layui-form-mid">~</span>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input2" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <a class="layui-btn layui-btn-opa mr30">筛选</a>
+                <a class="layui-btn layui-btn-opa-icon"><span class="color-icon-save"></span>导出</a>
+            </div>
+
+        </div>
+
+        <div class="layui-table">
+            <table class="layui-form " lay-even>
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>接警人</th>
+                    <th>接警时间</th>
+                    <th>接警方式</th>
+                    <th>所属地市</th>
+                    <th>所属分局</th>
+                    <th>案件类型</th>
+                    <th>出警时间</th>
+                    <th>处警人</th>
+                    <th>出警结果</th>
+                    <th>案件状态</th>
+                    <th>异常情况</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>王国强</td>
+                    <td>2016-12-12 10:22</td>
+                    <td>群众报警</td>
+                    <td>太原市</td>
+                    <td>迎泽分局</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>受理中</td>
+                    <td class="t-red">无案件情况说明</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="layui-form no-border  pageFooter-wrap">
+                <div class="layui-inline" style="z-index: 1;margin-left: 10px">
+                    <a class="layui-btn layui-btn-opa  ">查询记录</a>
+                    <a class="layui-btn layui-btn-opa  ">导出记录</a>
+                </div>
+
+                <div id="pageFooter"></div>
+            </div>
+        </div>
+    </form>
+    <!--e:受案不规范-->
+
+</div>

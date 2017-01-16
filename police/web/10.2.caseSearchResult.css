@@ -1,0 +1,26 @@
+@import url(/web/blueTable.css);
+@import url(/web/blueForm.css);
+.searchResultInfo{
+    padding-left:10px;
+    position:relative;
+}
+.searchResultInfo .text{
+    font-size: 1rem;
+    margin-right:20px;
+}
+.searchResultInfo .num{
+    color: #6cc9fe;
+}
+
+.rightBtn{
+    position:absolute;
+    right:10px;
+    top: -10px;
+    color: #db5700
+}
+.rightBtn:hover{
+    color: #db5700
+}
+.rightBtn span{    vertical-align: middle;
+
+}

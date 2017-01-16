@@ -1,0 +1,29 @@
+@import url(/web/blueForm.css);
+@import url(/web/blueTable.css);
+
+.layui-form-title .layui-btn-opa-icon{
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top:-19px;
+}
+.layui-form-title h3{
+	 margin: 0.5rem 0;
+}
+.download-file .col{
+	padding-left:10px;
+}
+.download-file .col .col2>p:first-child{
+	height: 60px;
+}
+.download-file .col .col2>p.text{
+	height: 60px;
+}
+.download-file .layui-btn{
+	color:#3d63bf;
+	font-size: 12px;
+	text-decoration:none;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 10px;
+}

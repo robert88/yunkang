@@ -1,0 +1,19 @@
+.layui-form{
+    border:1px solid #e6e6e6;
+    background: #fafafa;
+    position: relative;
+    height: 35rem;
+}
+.layui-form-wrap{
+    position: relative;
+    height: 100%;
+    background: url(/public/images/bg.png) no-repeat center center;
+
+}
+.layui-form-item{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -359px;
+    margin-top: -19px;
+}

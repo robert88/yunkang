@@ -148,5 +148,5 @@ function getBuildPath(from,to){
 
 createNav({
     temp:"./navtemp.html",
-    htmlPath:"../../../../work/gitlearning/deeplearning",
+    htmlPath:"../../../deeplearning",
 })

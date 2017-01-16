@@ -1,0 +1,58 @@
+@import url(/web/blueForm.css);
+@import url(/web/blueTable.css);
+
+
+/*form*/
+.ls-container .permissionItem{
+    margin-top: 1.25rem;
+}
+.ls-container .permissionItem>span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ls-container .subBtn{
+    padding: 0 37px;
+}
+.ls-container .subBtn-wrap{
+    border-top:1px solid #c1c1c1;
+    background: #eeeeee;
+    margin:0;
+    padding:1rem 0 2.5rem 0;
+}
+/*table*/
+
+.ls-container .layui-form-item.setPermission .layui-input-inline {
+    width: 290px;
+}
+
+/*top tab*/
+
+.layui-tab-title {
+    border-bottom:none
+}
+.layui-tab-brief > .layui-tab-title .layui-this {
+    color: #fff;
+    background: #0aa5ff ;
+    -moz-box-shadow:1px 1px 4px #0a6196  inset;             /* For Firefox3.6+ */
+    -webkit-box-shadow:1px 1px 4px #0a6196  inset;          /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 4px #0a6196  inset;
+}
+.layui-tab-brief > .layui-tab-title .layui-this:after, .layui-tab-brief > .layui-tab-more li.layui-this:after {
+    border: none;
+    border-radius: 0;
+    border-bottom: none;
+}
+
+.layui-tab-title li {
+    color: #fff;
+    min-width: 88px;
+    background: #0a3172  ;
+}
+.layui-tab-title li:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+.layui-tab-title li:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+

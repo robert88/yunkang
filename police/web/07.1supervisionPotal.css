@@ -1,0 +1,21 @@
+@import url(/web/03.1set.css);
+.ls-container ul {
+    width: 55.1rem;
+}
+.ls-container ul {
+    width: 55.1rem;
+}
+.ls-container li{
+    position: relative;
+}
+.ls-container .tips{
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    background: #fd0100;
+    right: 0.5rem;
+    top: 0.5rem;
+    position: absolute;
+}

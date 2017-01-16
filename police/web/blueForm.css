@@ -1,0 +1,71 @@
+.ls-container .layui-form{
+    border:1px solid #c1c1c1;
+    padding:   0 ;
+    margin-top: 1rem;
+}
+.layui-form-item-wrap{
+    width: 788px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.layui-form .layui-form-item.title{
+    padding-left: 10px;
+    height:2.5rem;
+    line-height: 2.5rem;
+    background: #eeeeee ;
+}
+.ls-container .layui-form.no-border{
+    border:none;
+}
+.layui-form-item  .layui-form .layui-input-inline {
+    width: 217px;
+    margin-right:0;/*对其*/
+}
+.ls-container .layui-form-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 22px;
+    line-height: 22px;
+    margin: 0px 0px 0 10px;
+    padding-right: 22px;
+    text-align: center;
+    -moz-box-shadow:1px 1px 4px #999 inset;             /* For Firefox3.6+ */
+    -webkit-box-shadow:1px 1px 4px #999 inset;          /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 4px #999 inset;
+}
+.ls-container .layui-form-checkbox i{
+    font-size:16px;
+    right: -3px;
+}
+.layui-form-radioed i, .layui-form-radio i:hover {
+    color: #797979;
+}
+.ls-container .layui-form-checked,
+.ls-container  .layui-form-checked:hover {
+    border: 1px solid #c2c2c2;
+}
+.ls-container .layui-form-checked i,
+.ls-container .layui-form-checked:hover i {
+    color: #0a3174;
+}
+.layui-form .searchList .layui-form-label{
+    color:#0aa5ff
+}
+.layui-form-title {
+    position: relative;
+    background: #0aa5ff;
+    color:#fff;
+    padding:0.4rem 0;
+    text-align: center
+}
+.layui-form-title h3{
+    font-sie: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+
+}
+.layui-form .searchList .layui-input-inline,
+.layui-form .searchList .layui-inline{
+    margin-right: 0;
+}

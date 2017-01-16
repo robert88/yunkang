@@ -1,0 +1,12 @@
+
+@import url(/web/blueForm.css);
+.layui-form .searchList .layui-form-label{
+    color:#db512c
+}
+.layui-form-title {
+    position: relative;
+    background: #db512c;
+    color:#fff;
+    padding:0.4rem 0;
+    text-align: center
+}
