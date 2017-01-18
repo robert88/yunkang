@@ -4,12 +4,24 @@
 nav,header{
 	display: none;
 }
+html{
+	position: relative;
+    height: 100%;
+    width: 100%;
+}
+body{
+	position: relative;
+    height: 100%;
+    width: 100%;
+}
 .ls-container{
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	min-height: 500px;
 	height: 100%;
+	padding:0;
 	background: url(/public/images/login/bg.jpg) no-repeat center center;
+	background-size: 100% 100%;
 }
 .ls-container .wrap{
 	position:absolute;
@@ -45,7 +57,7 @@ nav,header{
 	padding-left: 30px;
 }
 .ls-container .bottom{
-	margin-top:50px;
+	margin-top:30px;
 	font-size: 12px;
 	text-decoration: underline;
 	color: #fff;

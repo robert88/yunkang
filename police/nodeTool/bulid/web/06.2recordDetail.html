@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>警情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/layui.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/common.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+    <script src="/public/js/common/prototype.js"></script>
+    <script src="/public/js/module/lay/layui.js"></script>
+    <!--<script src="/public/js/common/setREM.js"></script>-->
+    <!--end mergeJs-->
+
+
+</head>
+
+<body>
+
+    <!--s:头部-->
+    <header>
+        <div class="welcome">欢迎你，警务编号0122 <a class="edit">[ <span>编辑</span> ]</a></div>
+        <div class="tips"><i class="color-icon-clock"></i> <span class="layui-circle msgNum layui-bg-danger">3</span></div>
+        <div class="right">
+            <div class="search "><input type="text" class="layui-input" placeholder="关键字搜索"><i class="icon-search2"></i></div>
+            <div class="login layui-circle layui-bg-danger">
+                <a href="01login.html"><i class="icon-power"></i></a></div>
+        </div>
+
+    </header>
+    <!--e:头部-->
+
+    <!--s:导航-->
+    <nav>
+        <div class="title">
+            <img src="/public/images/logo.png" alt="">
+        </div>
+        <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+            <li class="layui-nav-item layui-this">
+                <a class="a-wrap" href="02home.html">
+                    <p class="icon-wrap"><i class="icon-home"></i></p>
+                    <p class="text">首页</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="04policeRecord.html">
+                    <p class="icon-wrap"><i class="icon-post"></i></p>
+                    <p class="text">接警登记</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="05.2disposalFeedbackSelect.html">
+                    <p class="icon-wrap"><i class="icon-sms"></i></p>
+                    <p class="text">警情处置反馈</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="06.1recordList.html">
+                    <p class="icon-wrap"><i class="icon-form"></i></p>
+                    <p class="text">警情记录</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="07.1supervisionPotal.html">
+                    <p class="icon-wrap"><i class="icon-security"></i></p>
+                    <p class="text">警务监督</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="08overdue.html">
+                    <p class="icon-wrap"><i class="icon-information"></i></p>
+                    <p class="text">超期预警</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="09dataAnalysis.html">
+                    <p class="icon-wrap"><i class="icon-time"></i></p>
+                    <p class="text">数据分析</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="10.1caseSearch.html">
+                    <p class="icon-wrap"><i class="icon-search1"></i></p>
+                    <p class="text">案件查询</p>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a class="a-wrap" href="11.docManage.html">
+                    <p class="icon-wrap"><i class="icon-note"></i></p>
+                    <p class="text">档案管理</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="bottom">
+            <a class="a-wrap" href="03.1set.html">
+                <p class="icon-wrap"><i class="icon-set1"></i></p>
+                <p class="text">设置</p>
+            </a>
+        </div>
+    </nav>
+    <!--e:导航-->
+    <!--s:主题部分-->
+    <style  type='text/css'>@charset "UTF-8"; /*../web/blueForm.css*/.ls-container .layui-form{ border:1px solid #c1c1c1; padding: 0 ; margin-top: 1rem; } .layui-form-item-wrap{ width: 788px; margin-left:auto; margin-right:auto; } .layui-form .layui-form-item.title{ padding-left: 10px; height:2.5rem; line-height: 2.5rem; background: #eeeeee ; } .ls-container .layui-form.no-border{ border:none; } .layui-form-item .layui-form .layui-input-inline { width: 217px; margin-right:0; } .ls-container .layui-form-checkbox { position: relative; display: inline-block; vertical-align: middle; height: 22px; line-height: 22px; margin: 0px 0px 0 10px; padding-right: 22px; text-align: center; -moz-box-shadow:1px 1px 4px #999 inset;  -webkit-box-shadow:1px 1px 4px #999 inset;  box-shadow: 1px 1px 4px #999 inset; } .ls-container .layui-form-checkbox i{ font-size:16px; right: -3px; } .layui-form-radioed i, .layui-form-radio i:hover { color: #797979; } .ls-container .layui-form-checked, .ls-container .layui-form-checked:hover { border: 1px solid #c2c2c2; } .ls-container .layui-form-checked i, .ls-container .layui-form-checked:hover i { color: #0a3174; } .layui-form .searchList .layui-form-label{ color:#0aa5ff } .layui-form-title { position: relative; background: #0aa5ff; color:#fff; padding:0.4rem 0; text-align: center } .layui-form-title h3{ font-sie: 1.25rem; font-weight: 700; margin: 0.5rem 0; } .layui-form .searchList .layui-input-inline, .layui-form .searchList .layui-inline{ margin-right: 0; } /*../web/blueTable.css*/.ls-container .layui-table thead tr { background-color: #0aa5ff; color:#fff; } .layui-table th{ font-weight: 400; } .layui-table tfoot,.layui-table tfoot td{ border-bottom: none; } .pageFooter-wrap{ position:relative; } #pageFooter{ position: absolute; left:0; width: 100%; bottom:0; text-align: center; } .layui-laypage span, .layui-laypage a{ margin: 0 0 0 10px; height: 35px; line-height: 35px; } .layui-laypage { margin: 0; } .layui-laypage .layui-laypage-curr .layui-laypage-em { background-color: #0aa5ff; } .layui-laypage-total-num{ color:#6cc9fe; margin:0 5px; } .layui-table .btn-wrap{ width:100px; } /*../web/06.2recordDetail.css*/  .layui-form-title .layui-btn-opa-icon{ position: absolute; right: 10px; top:50%; margin-top:-19px; } .layui-form-title h3{ margin: 0.5rem 0; } .download-file .col{ padding-left:10px; } .download-file .col .col2>p:first-child{ height: 60px; } .download-file .col .col2>p.text{ height: 60px; } .download-file .layui-btn{ color:#3d63bf; font-size: 12px; text-decoration:none; height: 24px; line-height: 24px; padding: 0 10px; }</style>
+    <div class='ls-container'>
+
+	<div class="turnback">
+		<a onclick="history.back(-1)" class="layui-btn layui-btn-primary">返回</a>
+	</div>
+
+	<!--s:接警登记表-->
+	<form class="layui-form layui-form-pane1" action="">
+
+
+		<div class="layui-form-item  layui-form-title">
+			<h3>接处警记录</h3>
+			<a class="layui-btn layui-btn-opa-icon"><span class="color-icon-save"></span>导出</a>
+		</div>
+
+		<div class="layui-form-item layui-form-item-wrap">
+			<ul class="col" style="color:#0a3273">
+				<li class="col3">
+					<span>地市：</span>太原市
+				</li>
+				<li class="col3">
+					<span>分局：</span>小店分局
+				</li>
+				<li class="col3">
+					<span>案件类型：</span>刑事
+				</li>
+				<li class="col3 index">
+					<span>编号：</span>3218173440
+				</li>
+			</ul>
+			<table class="layui-table">
+				<tbody>
+				<tr>
+					<td class="title">接警时间</td>
+					<td colspan="5">2016 年 12 月 11 日    16 时 30 分</td>
+					<td class="title">接警人</td>
+					<td>徐丽</td>
+				</tr>
+				<tr>
+					<td class="title">接警方式</td>
+					<td colspan="7">指挥中心指令</td>
+				</tr>
+				<tr>
+					<td class="title">报警人</td>
+					<td class="title">姓名</td>
+					<td>-</td>
+					<td class="title">性别</td>
+					<td>-</td>
+					<td class="title">联系方式</td>
+					<td colspan="2">-</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="title">工作单位或住址</td>
+					<td colspan="6">指挥中心</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="title">警情现场地址</td>
+					<td colspan="6">太原市小店区真武路28号院内7幢302</td>
+				</tr>
+				<tr>
+					<td class="title">接警情况</td>
+					<td colspan="7">接到指令后立即派出一分队</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="layui-form-item layui-form-item-wrap">
+
+			<table class="layui-table">
+				<tbody>
+				<tr>
+					<td class="title">出警时间</td>
+					<td >2016-12-11  16:34</td>
+					<td class="title">到达现场时间</td>
+					<td>2016-12-11  16:34</td>
+				</tr>
+				<tr>
+					<td class="title">出警情况</td>
+					<td colspan="3">2016年12月11日，接指挥中心指令，前往警情现场，小店区真武路28号院7幢
+						302，经初步核实确系犯罪嫌疑人落脚点，遂乔装敲门引犯罪嫌疑人开门进行抓
+						捕。后在其屋内物品中发现有冰毒100G，已将其送往小店分局真武路派出所进
+						行进一步审查。</td>
+				</tr>
+				<tr>
+					<td class="title">处警结果</td>
+					<td colspan="3">报立刑事案件</td>
+				</tr>
+				<tr>
+					<td class="title">报立、移送案件情况</td>
+					<td colspan="3">刑事案件已立案</td>
+				</tr>
+				<tr>
+					<td class="title">处警人</td>
+					<td colspan="3">王建国</td>
+				</tr>
+				<tr class="download-file">
+					<td class="title">
+						<p>材料文件</p>
+						<button class="layui-btn layui-btn-primary layui-btn-radius">全部下载</button></td>
+					<td colspan="3" class="col">
+						<div class="col2">
+							<p><img src="/public/images/word.png" alt=""></p>
+							<p class="text">嫌疑人犯罪内容供述.doc</p>
+							<p><a href="嫌疑人犯罪内容供述.doc" class="layui-btn layui-btn-primary layui-btn-radius">下载</a></p>
+						</div>
+						<div class="col2">
+							<p><img src="/public/images/jpg.png" alt=""></p>
+							<p class="text">嫌疑人身份证扫描.jpg</p>
+							<p><a class="layui-btn layui-btn-primary layui-btn-radius" href="嫌疑人身份证扫描.jpg" >下载</a></p>
+						</div>
+						<div class="col2">
+							<p><img src="/public/images/excel.png" alt=""></p>
+							<p class="text">犯罪现场证据提取检验结果.xls</p>
+							<p><a class="layui-btn layui-btn-primary layui-btn-radius" href="犯罪现场证据提取检验结果.xls" >下载</a></p>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+		<div class="layui-form-item layui-form-item-wrap">
+			<div class=" subBtn-wrap2">
+				<button class="layui-btn subBtn" lay-submit="" lay-filter="*">返回</button>
+			</div>
+		</div>
+
+	</form>
+	<!--e:接警登记表-->
+
+</div>
+    
+    <!--e:主题部分-->
+
+</body>
+
+</html>
