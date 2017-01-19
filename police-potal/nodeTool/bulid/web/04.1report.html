@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>警情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/layui.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/common.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+    <script src="/public/js/common/prototype.js"></script>
+    <script src="/public/js/common/jquery.carousel.v1.0.1.js"></script>
+    <script src="/public/js/module/lay/layui.js"></script>
+    <!--<script src="/public/js/common/setREM.js"></script>-->
+    <!--end mergeJs-->
+
+
+</head>
+
+<body>
+
+<!--s:头部-->
+<header class="col">
+    <div class="logo col5"><img src="/public/images/logo.png" alt=""></div>
+    <!--s:导航-->
+    <nav class=" col7">
+        <ul class="col">
+            <li class="col20">
+                <a href="01home.html" class="a-wrap">
+                    <p class="title">首页</p>
+                    <p class="subTitle">HOME</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="01home.html" class="a-wrap">
+                    <p class="title">新闻公告</p>
+                    <p class="subTitle">NEWS</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="02.1caseInfo.html" class="a-wrap">
+                    <p class="title">警情办理</p>
+                    <p class="subTitle">ALARM</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="03.1caseSearch.html" class="a-wrap">
+                    <p class="title">案件办理</p>
+                    <p class="subTitle">CASE</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="04.1report.html" class="a-wrap">
+                    <p class="title">投诉举报中心</p>
+                    <p class="subTitle">COMPLAINTS</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--e:头部-->
+
+
+
+<!--e:导航-->
+<!--s:主题部分-->
+<style  type='text/css'>@charset "UTF-8"; /*../web/leftnav.css*/.contain{ padding-left:280px; position: relative; margin-top: 20px; margin-bottom:20px; min-height: 430px; } .wrap{ position:relative; } .left-contain{ width: 260px; height: 100%; background:url(/public/images/leftbg.png) no-repeat; position: absolute; left:0px; top:0px; } .left-contain ul{ width:150px; margin:150px auto 0 auto; } .left-contain li{ position:relative; line-height: 60px; background: url(/public/images/line.png) center bottom no-repeat; text-align: center; } .left-contain .current{ color:#003399 } .left-contain .current:after{ content: " "; position: absolute; width: 0px; height: 0px; left: -1px; top: 50%; margin-top: -4px; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-right: 4px solid #003399 ; border-left: none; } .left-contain .current:before{ content: " "; position: absolute; width: 0px; height: 0px; right: -1px; top: 50%; margin-top: -4px; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 4px solid #0a54ab ; border-right: none; } .right-contain{ border:1px solid #c1c1c1; padding:30px; min-height: 370px; } .right-contain .lay-btn{ background: #efefef; color:#999; padding:3px; font-size: 0.75rem; border-radius: 3px; } .layui-btn-opa:hover{ color:#666; } .layui-btn-opa, .layui-btn-opa-icon{ background: #eeeeee; color:#444; padding: 0 5px; min-width: 80px; text-align: center; display: inline-block; -moz-box-shadow:0px 5px 13px #fff inset;  -webkit-box-shadow:0px 5px 13px #fff inset;  box-shadow: 0px 5px 13px #fff inset; border-radius: 5px; border:1px solid #fff; border:1px solid #c1c1c1; } .layui-btn-bg-blue{ background: url(/public/images/btnbg.png) no-repeat; width: 200px; height: 50px; } .right-contain .bg-gray-text{ position: relative; background: #f4f4f4; margin-top: 30px; padding:25px; line-height: 1.875rem; } .right-contain .bg-gray-text:after{ content: " "; position:absolute; left:5px; top:5px; bottom:5px; right:5px; border:2px dashed #ffffff; } .layui-table .td-title{ color:#333; text-align: center; }    .crumb a{ margin-right: 5px; }/*../web/slide.css*/.slide-contain{ height: 10rem; position: relative; } .slide-contain .slide-wrap,.slide-contain .slide-item{ height: 100%; position: absolute; left: 0px; right:0px; } .slide-contain:after{ content:" "; position:absolute; background: url(/public/images/topbg.png) no-repeat center bottom; left:0; bottom:0; height:30px; width: 100%; }/*../web/04.1report.css*/  .right-contain .title{ font-size: 1rem; margin-bottom: 1rem; } .layui-form-radioed i, .layui-form-radio i:hover { color: #003399; } .layui-form-item .layui-input-inline { width: 50%; padding-left:0px; margin-right: 0px; } .layui-btn-opa, .layui-btn-opa-icon{ border-radius: 0; }</style>
+<div class='ls-container'>
+    <!--s:轮播图-->
+    <div class="slide-contain">
+        <ul class="slide-wrap">
+            <li class="slide-item" style="background: url(/public/images/slide/bannar1.jpg) no-repeat center top"></li>
+            <li class="slide-item" style="background: url(/public/images/slide/bannar1.jpg) no-repeat center top"></li>
+        </ul>
+    </div>
+    <!--e:轮播图-->
+    <!--s:面包屑-->
+    <div class="wrap crumb">
+        <span><img src="/public/images/location.png" alt=""></span>
+        <a href="01home.html">首页 ></a>
+        <a href="04.1report.html">投诉举报中心 ></a>
+        投诉举报
+    </div>
+    <!--e:面包屑-->
+    <div class="wrap">
+    <div class="contain">
+        <div class="left-contain">
+            <ul>
+                <li class="current"><a href="04.1report.html">投诉举报</a></li>
+                <li><a href="04.3reportSearch.html">结果查询</a></li>
+            </ul>
+        </div>
+        <div class="right-contain">
+            <div class="top tc">
+                <img src="/public/images/title/report.png" alt="">
+            </div>
+
+
+
+
+            <div class="bg-gray-text">
+                <div class="title">
+                    投诉举报须知
+                </div>
+                <p>1、群众对警情案件的处理结果不满意或认为公安机关存在不实立案、超期办理、执法不公、玩忽职守、粗暴执法
+                    等问题时，可对事实进行投诉举报。</p>
+                <p> 2、依流程投诉办理分别为执法办案部门、执法办案部门所属公安局、省厅。</p>
+            </div>
+
+            <form action="" class="layui-form">
+                    <div class="layui-form-item tc mt20">
+                            <input type="radio" name="sex" value="投诉" title="投诉"><div class="mr30 layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>投诉</span></div>
+                            <input type="radio" name="sex" value="举报" checked="" title="举报"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><span>举报</span></div>
+                    </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">投诉选项：</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value="">请选择</option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="阅读" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="0" class="">写作</dd><dd lay-value="1" class="layui-this">阅读</dd><dd lay-value="2" class="">游戏</dd><dd lay-value="3" class="">音乐</dd><dd lay-value="4" class="">旅行</dd></dl></div>
+                    </div>
+                </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <label class="layui-form-label">您的名字：</label>
+                            <div class="layui-input-block ">
+                                <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-input-inline">
+                            <label class="layui-form-label">电子邮箱：</label>
+                            <div class="layui-input-block ">
+                                <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+
+                            <label class="layui-form-label">详细内容：</label>
+                            <div class="layui-input-block ">
+                                <textarea class="layui-textarea"></textarea>
+                            </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <label class="layui-form-label">手机号码：</label>
+                            <div class="layui-input-block ">
+                                <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-input-inline" style="width: 39%">
+                            <label class="layui-form-label">验证码：</label>
+                            <div class="layui-input-block ">
+                                <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
+
+                            </div>
+                        </div>
+                        <span class="layui-btn layui-btn-opa">获取验证码</span>
+                    </div>
+
+
+            <div class="layui-form-item tc">
+                <button class="layui-btn-bg-blue layui-btn" >返回</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../web/useForm.js*/(function() {
+    layui.use("form", function() {
+        var form = layui.form();
+        form.verify({
+            title: function(value) {
+                if (value.length < 5) {
+                    return "标题也太短了吧";
+                }
+            },
+            pass: [ /(.+){6,12}$/, "密码必须6到12位" ]
+        });
+        form.on("checkbox", function(data) {
+            var $check;
+            var $parent = $(data.elem).parents(".layui-table");
+            var $item = $parent.find("tbody").find("input[type=checkbox]");
+            var $allCheckbox = $parent.find("input[type=checkbox]");
+            if ($(data.elem).hasClass("layui-select-all")) {
+                if (data.elem.checked) {
+                    $check = $allCheckbox.filter(function() {
+                        return this.checked == false;
+                    });
+                } else {
+                    $check = $allCheckbox.filter(function() {
+                        return this.checked == true;
+                    });
+                }
+                $check.trigger("click").next().toggleClass("layui-form-checked");
+            } else {
+                checkSelect($item, $parent);
+            }
+        });
+        function checkSelect($item, $parent) {
+            var count = 0;
+            $item.each(function(index, check) {
+                if (check.checked) {
+                    count++;
+                }
+            });
+            if (count == $item.length) {
+                $parent.find(".layui-select-all").filter(function() {
+                    return this.checked == false;
+                }).trigger("click").next().toggleClass("layui-form-checked");
+            } else {
+                $parent.find(".layui-select-all").filter(function() {
+                    return this.checked == true;
+                }).trigger("click").next().toggleClass("layui-form-checked");
+            }
+        }
+        $(".delSelectItem").click(function() {
+            var $parent = $(this).parents(".layui-table");
+            var $item = $parent.find("tbody").find("input[type=checkbox]").filter(function() {
+                return this.checked == true;
+            });
+            $item.each(function() {
+                $(this).parents("tr").remove();
+            });
+            $parent.find(".layui-select-all").trigger("click").next().toggleClass("layui-form-checked");
+        });
+        form.on("submit(*)", function(data) {
+            console.log(data);
+            return false;
+        });
+    });
+})();;/*../web/slide.js*/(function() {
+    $(".slide-contain").carousel({
+        prev: false,
+        next: false,
+        item: ".slide-item",
+        itemWrap: ".slide-wrap",
+        time: 300,
+        fixArrow: false,
+        loop: true,
+        nextLoop: true,
+        autoPlay: true,
+        autoPlayTime: 3e3,
+        dir: "left"
+    });
+})();;/*../web/04.1report.js*/(function() {
+    innerRequire(2);
+    innerRequire(1);
+})();})();})</script>
+<!--e:主题部分-->
+
+<footer>
+    <div class="wrap">
+        <div class="info">
+            <p>
+                <span class="mr30">地址：太原市五一路36号</span>
+                <span class="mr30">邮编：030001</span>
+                <span class="mr30">电话：0351-3651110</span>
+            </p>
+            <p>
+                copyright@ sxgonganting all rights reserved
+            </p>
+            <p>
+                <span class="mr30">版权所有：山西省公安厅</span>
+                <span class="mr30">晋ICP备00000000号-1</span>
+            </p>
+        </div>
+        <img src="/public/images/code.jpg" alt="" class="codeImg">
+    </div>
+</footer>
+</body>
+
+</html>

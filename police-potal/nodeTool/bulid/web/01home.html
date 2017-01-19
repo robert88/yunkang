@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>警情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/layui.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/common.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+    <script src="/public/js/common/prototype.js"></script>
+    <script src="/public/js/common/jquery.carousel.v1.0.1.js"></script>
+    <script src="/public/js/module/lay/layui.js"></script>
+    <!--<script src="/public/js/common/setREM.js"></script>-->
+    <!--end mergeJs-->
+
+
+</head>
+
+<body>
+
+<!--s:头部-->
+<header class="col">
+    <div class="logo col5"><img src="/public/images/logo.png" alt=""></div>
+    <!--s:导航-->
+    <nav class=" col7">
+        <ul class="col">
+            <li class="col20">
+                <a href="01home.html" class="a-wrap">
+                    <p class="title">首页</p>
+                    <p class="subTitle">HOME</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="01home.html" class="a-wrap">
+                    <p class="title">新闻公告</p>
+                    <p class="subTitle">NEWS</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="02.1caseInfo.html" class="a-wrap">
+                    <p class="title">警情办理</p>
+                    <p class="subTitle">ALARM</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="03.1caseSearch.html" class="a-wrap">
+                    <p class="title">案件办理</p>
+                    <p class="subTitle">CASE</p>
+                </a>
+            </li>
+            <li class="col20">
+                <a href="04.1report.html" class="a-wrap">
+                    <p class="title">投诉举报中心</p>
+                    <p class="subTitle">COMPLAINTS</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--e:头部-->
+
+
+
+<!--e:导航-->
+<!--s:主题部分-->
+<style  type='text/css'>@charset "UTF-8"; /*../web/01home.css*/.slide-contain{ height: 31.25rem; position: relative; } .slide-contain .slide-wrap,.slide-contain .slide-item{ height: 100%; position: absolute; left: 0px; right:0px; } .portal{ padding:2.5rem 0; text-align: center; }  .notice .layui-tab{ padding-right: 20px; } .layui-tab-brief > .layui-tab-title .layui-this { color: #00329b; font-weight: 700; } .layui-tab-brief > .layui-tab-title .layui-this:after, .layui-tab-brief > .layui-tab-more li.layui-this:after { border-bottom: 3px solid #00329b; top: 1px; } .layui-tab-title{ border-bottom-width: 3px; } .layui-tab-content .layui-tab-item{ height: 100%; width: 100%; } .moreBtn{ position: relative; display: inline-block; width:90px; background: #003399 ; text-align: center; color:#fff; line-height: 1.75rem; height:1.75rem; }  .notice{ background: #fbfbfb ; padding:2rem 0; } .notice h3{ font-size: 1.25rem; } .notice .tips{ background: #ebebeb; color:#aaa; height: 1.875rem; line-height: 1.875rem; } .notice .newsList{ border-top:1px solid #c1c1c1; margin-top:1rem; } .notice .newsList>li{ margin-top:.8rem }  .alarm-portal{ padding:2rem 0; } .alarm-portal .alarm-item{ position: relative; border-bottom:1px solid #c1c1c1; padding:1.25rem 0 1.25rem 60px; } .alarm-portal .tips{ position: absolute; left:0px; padding:0 5px; height:30px; background:#ff9909; color:#fff; text-align: center; top:1.25rem; } .alarm-portal .alarm-item .title{ color:#456394; }  .suggest-portal{ background:#384766; padding:1.5rem 0; position: relative; color:#fff; } #dituContent{ position:absolute; top:0; left:0; width:50%; height:100%; } .suggest-portal .title{ font-size: 1.25rem; } .suggest-portal .right-wrap{ padding:0 40px; } .suggest-portal .layui-input, .suggest-portal .layui-select{ background:#384766; color:#64b7c8; height:20px; border:none; border-bottom:1px solid #64b7c8; margin-top: 10px; padding:0 } .suggest-portal .layui-textarea{ background:#384766; color:#64b7c8; padding:0 } ::-webkit-input-placeholder { color:#64b7c8; } ::-moz-placeholder { color:#64b7c8; }  :-ms-input-placeholder { color:#64b7c8; }  input:-moz-placeholder { color:#64b7c8; } .layui-submit-btn{ background: #0aa5ff ; color:#fff; width:115px; } .suggest-portal .addr, .suggest-portal .code, .suggest-portal .tel { color:#64b7c8; margin-right:30px; }  .logo-portal{ background:#1b1b1b; padding:2rem 0; text-align: center; }</style>
+<link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/11/bmap.css">
+<div class='ls-container'>
+
+    <!--s:轮播图-->
+    <div class="slide-contain">
+        <ul class="slide-wrap">
+            <li class="slide-item" style="background: url(/public/images/slide/1.jpg) no-repeat center top"></li>
+            <li class="slide-item" style="background: url(/public/images/slide/1.jpg) no-repeat center top"></li>
+            <li class="slide-item" style="background: url(/public/images/slide/1.jpg) no-repeat center top"></li>
+        </ul>
+    </div>
+    <!--e:轮播图-->
+    <!--s:入口点-->
+    <div class="portal">
+        <div class="wrap">
+            <ul class="col">
+                <li class="col4"><a href="02.1caseInfo.html"><img src="/public/images/portal/1.png" alt=""></a></li>
+                <li class="col4"><a href="03.1caseSearch.html"><img src="/public/images/portal/2.png" alt=""></a></li>
+                <li class="col4"><a href="04.1report.html"><img src="/public/images/portal/3.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--e:入口点-->
+    <!--s:新闻-->
+    <div class="notice">
+        <div class="wrap">
+            <ul class="col">
+                <li class="col7">
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">新闻</li>
+                            <li>公告</li>
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <h3 class="t-blue">山西忻州数千名公安民警坚守岗位守护平安</h3>
+                                <div class="text">
+                                    在刚刚过去的国庆假期里，有这样一群人，他们不休息，依然坚守在各自的工作岗位上，
+                                    他们忙碌的身影构成了国庆期间一道亮丽的风景线。山西省忻州市的全体公安...
+                                </div>
+                                <p><a class="moreBtn">查看详细 <i class="triangle"></i></a></p>
+                                <ul class="newsList">
+                                    <li>
+                                        <span class="layui-btn layui-btn-radius tips">新闻</span>
+                                        <span class="text">全省公安机关纪念建党95周年摄影报道特辑</span>
+                                        <span class="date">2016/07/20</span>
+                                    </li>
+                                    <li>
+                                        <span class="layui-btn layui-btn-radius tips">新闻</span>
+                                        <span class="text">全省公安机关纪念建党95周年摄影报道特辑</span>
+                                        <span class="date">2016/07/20</span>
+                                    </li>
+                                    <li>
+                                        <span class="layui-btn layui-btn-radius tips">新闻</span>
+                                        <span class="text">全省公安机关纪念建党95周年摄影报道特辑</span>
+                                        <span class="date">2016/07/20</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="layui-tab-item">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col5" style="padding-top:30px;">
+                    <img src="/public/images/news/1.png" width="100%" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--e:新闻-->
+    <!--e:警情公开tab-->
+    <div class="alarm-portal">
+        <div class="wrap">
+
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">警情公开</li>
+                    <li>案件公开</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <ul>
+                            <li class="alarm-item">
+                                <div class="arrow-right"></div>
+                                <div class="tips">已受案</div>
+                                <p>
+                                    <span class="title">太原市小店公安分局依法对某建筑公司寻衅滋事进行受案处理</span>
+                                </p>
+                                <p>
+                                    日前，太原市小店公安分局依法对某建筑公司与社会人员寻衅滋事进行受案处理。12月20日，小店公安分局对主要涉事人员进行拘捕。案件正在进一...
+                                </p>
+                            </li>
+                            <li class="alarm-item">
+                                <div class="arrow-right"></div>
+                                <div class="tips">已受案</div>
+                                <p>
+                                    <span class="title">太原市小店公安分局依法对某建筑公司寻衅滋事进行受案处理</span>
+                                </p>
+                                <p>
+                                    日前，太原市小店公安分局依法对某建筑公司与社会人员寻衅滋事进行受案处理。12月20日，小店公安分局对主要涉事人员进行拘捕。案件正在进一...
+                                </p>
+                            </li>
+                            <li class="alarm-item">
+                                <div class="arrow-right"></div>
+                                <div class="tips">已受案</div>
+                                <p>
+                                    <span class="title">太原市小店公安分局依法对某建筑公司寻衅滋事进行受案处理</span>
+                                </p>
+                                <p>
+                                    日前，太原市小店公安分局依法对某建筑公司与社会人员寻衅滋事进行受案处理。12月20日，小店公安分局对主要涉事人员进行拘捕。案件正在进一...
+                                </p>
+                            </li>
+                            <li class="alarm-item">
+                                <div class="arrow-right"></div>
+                                <div class="tips">已受案</div>
+                                <p>
+                                    <span class="title">太原市小店公安分局依法对某建筑公司寻衅滋事进行受案处理</span>
+                                </p>
+                                <p>
+                                    日前，太原市小店公安分局依法对某建筑公司与社会人员寻衅滋事进行受案处理。12月20日，小店公安分局对主要涉事人员进行拘捕。案件正在进一...
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="layui-tab-item"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--e:警情公开tab-->
+    <!--s:建议-->
+    <div class="suggest-portal">
+        <div class="wrap">
+        <div id="dituContent"></div>
+        <ul class="col">
+            <li class="col6">&nbsp;</li>
+            <li class="col6">
+                <div class="right-wrap">
+                    <div class="title">意见建议</div>
+                    <form action="" class="layui-form">
+                        <div class="layui-form-item">
+                            <input type="tel" name="phone" lay-verify="" autocomplete="off" class="layui-input"
+                                   placeholder="您的名字">
+                        </div>
+                        <div class="layui-form-item">
+                            <input type="tel" name="phone" lay-verify="" autocomplete="off" class="layui-input"
+                                   placeholder="您的电话">
+                        </div>
+                        <div class="layui-form-item">
+                            <input type="tel" name="phone" lay-verify="" autocomplete="off" class="layui-input"
+                                   placeholder="您的电子邮箱">
+                        </div>
+                        <p>详细内容</p>
+                        <div class="layui-form-item">
+                            <textarea class="layui-textarea"></textarea>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn layui-btn-radius layui-submit-btn" lay-submit="" lay-filter="*">提交</button>
+                        </div>
+                    </form>
+                    <div>
+                        <span class="addr">地址：太原市五一路36号 </span>
+                        <span class="code">邮编：030001</span>
+                        <span class="tel">电话：0351-3651110</span></div>
+                </div>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+    <!--e:建议-->
+    <div class="logo-portal">
+        <img src="/public/images/logoBottom.png" alt="">
+    </div>
+</div>
+<script type="text/javascript"
+        src="http://api.map.baidu.com/getscript?v=1.1&amp;ak=&amp;services=true&amp;t=20130716024058"></script>
+
+<script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../web/slide.js*/(function() {
+    $(".slide-contain").carousel({
+        prev: false,
+        next: false,
+        item: ".slide-item",
+        itemWrap: ".slide-wrap",
+        time: 300,
+        fixArrow: false,
+        loop: true,
+        nextLoop: true,
+        autoPlay: true,
+        autoPlayTime: 3e3,
+        dir: "left"
+    });
+})();;/*../web/01home.js*/(function() {
+    innerRequire(1);
+    layui.use("element", function() {
+        var element = layui.element();
+        element.on("tab(test)", function(data) {
+            var $li = $(this).parents(".layui-tab").find(".layui-tab-content").find(".layui-tab-item");
+            var index = $(this).index();
+            if (!$(this).data("initChat") && $li.length > index) {
+                initChart($li.get(index));
+                $(this).data("initChat", true);
+            }
+        });
+        element.on("nav(test)", function(elem) {
+            console.log(elem);
+        });
+    });
+    function initMap() {
+        if (!window.BMap) {
+            setTimeout(initMap, 1e3);
+            return;
+        }
+        createMap();
+        setMapEvent();
+        addMapControl();
+        addMarker();
+    }
+    function createMap() {
+        var map = new BMap.Map("dituContent");
+        var point = new BMap.Point(112.581645, 37.872);
+        map.centerAndZoom(point, 18);
+        window.map = map;
+    }
+    function setMapEvent() {
+        map.enableDragging();
+        map.enableScrollWheelZoom();
+        map.enableDoubleClickZoom();
+        map.enableKeyboard();
+    }
+    function addMapControl() {
+        var ctrl_nav = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(ctrl_nav);
+        var ctrl_ove = new BMap.OverviewMapControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen: 1
+        });
+        map.addControl(ctrl_ove);
+        var ctrl_sca = new BMap.ScaleControl({
+            anchor: BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        map.addControl(ctrl_sca);
+    }
+    var markerArr = [ {
+        title: "山西省公安厅",
+        content: "山西省公安厅",
+        point: "112.581484|37.872",
+        isOpen: 0,
+        icon: {
+            w: 21,
+            h: 21,
+            l: 0,
+            t: 0,
+            x: 6,
+            lb: 5
+        }
+    } ];
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {
+                icon: iconImg
+            });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {
+                offset: new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+            });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+            (function() {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function() {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function() {
+                    _marker.getLabel().hide();
+                });
+                _iw.addEventListener("close", function() {
+                    _marker.getLabel().show();
+                });
+                label.addEventListener("click", function() {
+                    _marker.openInfoWindow(_iw);
+                });
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })();
+        }
+    }
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    function createIcon(json) {
+        var icon = new BMap.Icon("/public/images/location2.png", new BMap.Size(json.w, json.h), {
+            imageOffset: new BMap.Size(-json.l, -json.t),
+            infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+            offset: new BMap.Size(json.x, json.h)
+        });
+        return icon;
+    }
+    initMap();
+})();})();})</script>
+<!--e:主题部分-->
+
+<footer>
+    <div class="wrap">
+        <div class="info">
+            <p>
+                <span class="mr30">地址：太原市五一路36号</span>
+                <span class="mr30">邮编：030001</span>
+                <span class="mr30">电话：0351-3651110</span>
+            </p>
+            <p>
+                copyright@ sxgonganting all rights reserved
+            </p>
+            <p>
+                <span class="mr30">版权所有：山西省公安厅</span>
+                <span class="mr30">晋ICP备00000000号-1</span>
+            </p>
+        </div>
+        <img src="/public/images/code.jpg" alt="" class="codeImg">
+    </div>
+</footer>
+</body>
+
+</html>
