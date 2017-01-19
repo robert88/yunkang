@@ -1,0 +1,19 @@
+.slide-contain{
+    height: 10rem;
+    position: relative;
+}
+.slide-contain .slide-wrap,.slide-contain .slide-item{
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    right:0px;
+}
+.slide-contain:after{
+    content:" ";
+    position:absolute;
+    background: url(/public/images/topbg.png) no-repeat center bottom;
+    left:0;
+    bottom:0;
+    height:30px;
+    width: 100%;
+}

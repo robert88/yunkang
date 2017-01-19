@@ -1,7 +1,6 @@
 .slide-contain{
  height: 31.25rem;
     position: relative;
-
 }
 .slide-contain .slide-wrap,.slide-contain .slide-item{
     height: 100%;

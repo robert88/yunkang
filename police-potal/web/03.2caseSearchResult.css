@@ -1,0 +1,33 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+.right-contain .top{
+    text-align: center;
+}
+.right-contain .title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color:red;
+}
+
+
+.right-contain .list{
+    margin:20px 0;
+}
+.right-contain .list>li{
+    border:1px solid #c1c1c1;
+    background: #f4f4f4 ;
+    position:relative;
+    line-height: 40px;
+    margin-top: 20px;
+    padding:0 25px;
+}
+
+.right-contain .list>li .tips-down{
+   position:absolute;
+    right:10px;
+    top:50%;
+    margin-top:-12.5px;
+    background: url(/public/images/cricleRound.png) no-repeat;
+    width: 25px;
+    height: 25px;
+}

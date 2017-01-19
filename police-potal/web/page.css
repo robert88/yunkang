@@ -1,0 +1,22 @@
+.pageFooter-wrap{
+    position:relative;
+    margin-top: 20px;
+}
+.layui-laypage span, .layui-laypage a{
+    margin: 0 0 0 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.layui-laypage {
+    margin:  0;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #0aa5ff;
+}
+.layui-laypage-total-num{
+    color:#6cc9fe;
+    margin:0 5px;
+}
+.layui-table .btn-wrap{
+    width:100px;
+}

@@ -1,0 +1,21 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+.right-contain .title{
+    font-size:1rem;
+    color:#003399;
+}
+.layui-table{
+    text-align: center;
+}
+.layui-table thead tr{
+    background: #dff1fd ;
+    text-align: center;
+}
+.layui-table thead tr th{
+    text-align: center;
+    font-weight: 400;
+}
+.layui-table .layui-btn{
+    height: 30px;
+    line-height: 30px;
+}

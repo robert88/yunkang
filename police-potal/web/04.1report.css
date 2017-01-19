@@ -1,0 +1,18 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+
+.right-contain .title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.layui-form-radioed i, .layui-form-radio i:hover {
+    color: #003399;
+}
+.layui-form-item .layui-input-inline {
+    width: 50%;
+    padding-left:0px;
+    margin-right: 0px;
+}
+.layui-btn-opa, .layui-btn-opa-icon{
+    border-radius: 0;
+}

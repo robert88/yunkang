@@ -455,7 +455,7 @@
 
         var loop = this.loop;
 
-        if (( idx < 0 ) || ( idx > ( total - 1 ) ) || this.lock) {
+        if (( idx < 0 ) || ( idx > ( total - 1 ) ) || this.lock||this.curIndex==this.nextIndex) {
 
             console.log("参数不对或者change已锁。");
 
@@ -501,10 +501,11 @@
                    }else if(this.curIndex==0&&(this.nextIndex==this.total-1)){
                        this.setPosition(this.nextIndex,-1);
                    }else{
-                        nextLeft = this.$item.eq(this.nextIndex).data("animateTargetLeft");
-                        curLeft = this.$item.eq(this.curIndex).data("animateTargetLeft");
+
                    }
                }
+                nextLeft = this.$item.eq(this.nextIndex).data("animateTargetLeft");
+                curLeft = this.$item.eq(this.curIndex).data("animateTargetLeft");
                 if(typeof nextLeft == "undefined"){
                     nextLeft = this.$item.eq(this.nextIndex).css("left").toFloat()
                 }
@@ -513,13 +514,15 @@
                 }
                  animateLeft= nextLeft-curLeft  ;
                 this.$item.not(this.$item.eq(this.curIndex)).each(function(){
-                    var $this = $(this);
-                    startAniamteBySilde($this,animateLeft,that)
+                    //清除缓存
+                    var idx = $(this).index();
+                    that.startAniamteBySilde(that.$item.eq(idx),animateLeft,that)
                 });
                 //去掉间隙
-                startAniamteBySilde(this.$item.eq(this.curIndex),animateLeft,that,function () {
+                that.startAniamteBySilde(this.$item.eq(this.curIndex),animateLeft,that,function () {
                     if(typeof that.changeCallBack == "function"){
                         that.changeCallBack(that.curIndex);
+                        that.$item.removeClass("active").eq(that.nextIndex).addClass("active")
                     }
                 })
 
@@ -538,7 +541,7 @@
 
     };
 
-    function startAniamteBySilde($this,animateLeft,that,callback) {
+    Carousel.prototype.startAniamteBySilde = function($this,animateLeft,that,callback) {
         var left =$this.data("animateTargetLeft")
         if(typeof left == "undefined"){
             left = $this.css("left").toFloat();
@@ -724,7 +727,7 @@
 
                 opts.$prev = $this.find(opts.prev);//上翻
 
-                if (opts.$prev.length == 0) {
+                if (opts.$prev.length == 0&&opts.prev!==false) {
                     opts.$prev = $("<div class='cs-prev'> < </div>");
                     opts.prev = ".cs-prev";
                     opts.$wrap.append(opts.$prev);
@@ -733,7 +736,7 @@
 
                 opts.$next = $this.find(opts.next);//上翻
 
-                if (opts.$next.length == 0) {
+                if (opts.$next.length == 0&&opts.next!==false) {
                     opts.$next = $("<div class='cs-next'> > </div>");
                     opts.next = ".cs-next";
                     opts.$wrap.append(opts.$next);
@@ -757,21 +760,26 @@
 
                 var carousel = new Carousel(opts);
 
-                opts.$wrap.delegate(opts.prev, "click", function () {
+                if(opts.prev){
+                    opts.$wrap.delegate(opts.prev, "click", function () {
 
-                    carousel.goPrev();
+                        carousel.goPrev();
 
-                    return false;
+                        return false;
 
-                });
+                    });
+                }
 
-                opts.$wrap.delegate(opts.next, "click", function (e) {
+                if(opts.next){
+                    opts.$wrap.delegate(opts.next, "click", function (e) {
 
-                    carousel.goNext();
+                        carousel.goNext();
 
-                    return false;
+                        return false;
 
-                });
+                    });
+                }
+
                 var perWrapContainWidth,perWrapContainHeight;
                 $(window).on("resize",function () {
                     var wrapContainWidth = opts.$wrap.width();

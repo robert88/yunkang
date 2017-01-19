@@ -1,0 +1,122 @@
+.contain{
+	padding-left:280px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom:20px;
+	min-height: 430px;
+}
+.wrap{
+	position:relative;
+}
+.left-contain{
+	width: 260px;
+	height: 100%;
+
+	background:url(/public/images/leftbg.png) no-repeat;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+.left-contain ul{
+	width:150px;
+	margin:150px auto 0 auto;
+}
+.left-contain li{
+	position:relative;
+	line-height: 60px;
+	background: url(/public/images/line.png) center bottom  no-repeat;
+	text-align: center;
+}
+.left-contain .current{
+	color:#003399
+}
+.left-contain .current:after{
+	content: " ";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: -1px;
+	top: 50%;
+	margin-top: -4px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid #003399 ;
+	border-left: none;
+}
+.left-contain .current:before{
+	content: " ";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	right: -1px;
+	top: 50%;
+	margin-top: -4px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #0a54ab ;
+	border-right: none;
+}
+
+.right-contain{
+	border:1px solid #c1c1c1;
+	padding:30px;
+	min-height: 370px;
+}
+.right-contain .lay-btn{
+	background: #efefef;
+	color:#999;
+	padding:3px;
+	font-size: 0.75rem;
+	border-radius: 3px;
+}
+.layui-btn-opa:hover{
+	color:#666;
+}
+.layui-btn-opa,
+.layui-btn-opa-icon{
+	background: #eeeeee;
+	color:#444;
+	padding: 0 5px;
+	min-width: 80px;
+	text-align: center;
+	display: inline-block;
+	-moz-box-shadow:0px 5px 13px #fff inset;          /* For Firefox3.6+ */
+	-webkit-box-shadow:0px 5px 13px #fff inset;        /* For Chrome5+, Safari5+ */
+	box-shadow: 0px 5px 13px #fff inset;
+	border-radius: 5px;
+	border:1px solid #fff;
+	border:1px solid #c1c1c1;
+}
+.layui-btn-bg-blue{
+	background: url(/public/images/btnbg.png) no-repeat;
+	width: 200px;
+	height: 50px;
+
+}
+
+.right-contain .bg-gray-text{
+	position: relative;
+	background: #f4f4f4;
+	margin-top: 30px;
+	padding:25px;
+	line-height: 1.875rem;
+}
+.right-contain .bg-gray-text:after{
+	content: " ";
+	position:absolute;
+	left:5px;
+	top:5px;
+	bottom:5px;
+	right:5px;
+	border:2px dashed #ffffff;
+}
+.layui-table .td-title{
+	color:#333;
+	text-align: center;
+}
+/*.crumb{*/
+	/*font-size:12px;*/
+/*}*/
+.crumb a{
+	margin-right: 5px;
+}

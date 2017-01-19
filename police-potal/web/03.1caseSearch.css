@@ -1,0 +1,25 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+.right-contain .top{
+    text-align: center;
+}
+
+.right-contain .title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.layui-form-item-wrap{
+    width:80%;
+    margin:20px auto ;
+}
+
+.layui-form-label {
+    width:100px;
+}
+.layui-input-block {
+    margin-left: 134px;}
+.layui-btn-opa,
+.layui-btn-opa-icon{
+    margin-top:-3px;
+    width: 19%;
+}

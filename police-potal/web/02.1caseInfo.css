@@ -1,0 +1,18 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+@import url(/web/page.css);
+.right-contain .title{
+    font-size:1.125rem;
+}
+.right-contain .text{
+    color:#999;
+}
+
+.right-contain ul{
+    margin-top: -20px;
+}
+.right-contain .body-item{
+    border-bottom:1px solid #c1c1c1;
+    padding: 20px 0;
+
+}

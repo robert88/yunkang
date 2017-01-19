@@ -1,0 +1,11 @@
+@import url(/web/leftnav.css);
+@import url(/web/slide.css);
+@import url(/web/page.css);
+.right-contain .title{
+    font-size:1.125rem;
+    color:#003399;
+    text-align:center;
+}
+.right-contain .date{
+    text-align:center;
+}

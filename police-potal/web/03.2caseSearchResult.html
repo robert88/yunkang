@@ -2,29 +2,32 @@
     <!--s:轮播图-->
     <div class="slide-contain">
         <ul class="slide-wrap">
-            <li class="slide-item" style="background: url(/public/images/slide/1.jpg) no-repeat center top"></li>
+            <li class="slide-item" style="background: url(/public/images/slide/bannar1.jpg) no-repeat center top"></li>
+            <li class="slide-item" style="background: url(/public/images/slide/bannar1.jpg) no-repeat center top"></li>
         </ul>
     </div>
     <!--e:轮播图-->
     <!--s:面包屑-->
     <div class="wrap crumb">
+        <span><img src="/public/images/location.png" alt=""></span>
         <a href="#/web/01home.html">首页 ></a>
-        <a href="#/web/02.1caseInfo.html">警情办理 ></a>
-        警情信息公开
+        <a href="#/web/03.1caseSearch.html">案件办理 ></a>
+        案件办理查询
     </div>
     <!--e:面包屑-->
-
+    <div class="wrap">
     <div class="contain">
         <div class="left-contain">
             <ul>
-                <li><a href="">警情信息公开</a></li>
-                <li><a href="">警情信息查询</a></li>
+                <li><a href="#/web/02.1caseInfo.html">警情信息公开</a></li>
+                <li class="current" href="#/web/03.1caseSearch.html"><a href="">警情信息查询</a></li>
             </ul>
         </div>
         <div class="right-contain">
             <div class="top">
-                <img src="/public/images/title.png" alt="">
+                <img src="/public/images/title/alarmSearchResult.png" alt="">
             </div>
+			<div class="bg-gray-text">
             <div class="table-wrap">
                 <div class="title">
                     案件查询编号：2913850
@@ -59,7 +62,7 @@
                     <tbody>
                     <tr>
                         <td class="td-title">受害人姓名：</td>
-                        <td colspan="3">张三</td>
+                        <td >张三</td>
                         <td class="td-title">性别：</td>
                         <td>男</td>
                     </tr>
@@ -100,8 +103,8 @@
                     </tbody>
                 </table>
             </div>
-
-            <ul>
+			</div>
+            <ul class="list">
                 <li>
                     <div class="tips-title"><span>执法依据</span> <span class="tips-down"></span></div>
                 </li>
@@ -112,6 +115,10 @@
                     <div class="tips-title"><span>当事人权利义务</span> <span class="tips-down"></span></div>
                 </li>
             </ul>
+            <div class="layui-form-item tc">
+                <button class="layui-btn-bg-blue layui-btn" >返回</button>
+            </div>
+			</div>
         </div>
     </div>
 </div>
